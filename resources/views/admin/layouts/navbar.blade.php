@@ -115,7 +115,7 @@
         </li>
 
 
-        <li class="nav-item has-treeview {{ active_menu('countries')[0] }} ">
+        <!--<li class="nav-item has-treeview {{ active_menu('countries')[0] }} ">
           <a href="#" class="nav-link ">
             <i class="nav-icon fa fa-flag"></i>
             <p>
@@ -197,7 +197,7 @@
             </li>
 
           </ul>
-        </li>
+        </li>-->
 
 
 
@@ -286,7 +286,7 @@
 
 
 
-      <li class="nav-item has-treeview {{ active_menu('brands')[0] }} ">
+      <!--<li class="nav-item has-treeview {{ active_menu('brands')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-tags"></i>
           <p>
@@ -305,6 +305,34 @@
 
           <li class="nav-item">
             <a href="{{aurl('brands/create')}}" class="nav-link">
+              <i class="fa fa-plus nav-icon"></i>
+              <p>{{ trans('admin.add') }}</p>
+            </a>
+          </li>
+
+        </ul>
+      </li>-->
+
+
+      <li class="nav-item has-treeview {{ active_menu('news')[0] }} ">
+        <a href="#" class="nav-link ">
+          <i class="nav-icon fa fa-tags"></i>
+          <p>
+            {{ trans('admin.news') }}
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview" style=" {{ active_menu('news')[1] }} ">
+
+          <li class="nav-item">
+            <a href="{{aurl('news')}}" class="nav-link">
+              <i class="fa fa-tags nav-icon"></i>
+              <p>{{ trans('admin.news') }}</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{aurl('news/create')}}" class="nav-link">
               <i class="fa fa-plus nav-icon"></i>
               <p>{{ trans('admin.add') }}</p>
             </a>
@@ -340,7 +368,7 @@
         </ul>
       </li>
 
-      <li class="nav-item has-treeview {{ active_menu('factories')[0] }} ">
+      <!--<li class="nav-item has-treeview {{ active_menu('factories')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-address-card"></i>
           <p>
@@ -365,11 +393,11 @@
           </li>
 
         </ul>
-      </li>
+      </li>-->
 
 
 
-      <li class="nav-item has-treeview {{ active_menu('malls')[0] }} ">
+      <!--<li class="nav-item has-treeview {{ active_menu('malls')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-building"></i>
           <p>
@@ -394,11 +422,11 @@
           </li>
 
         </ul>
-      </li>
+      </li> -->
 
 
 
-      <li class="nav-item has-treeview {{ active_menu('shippings')[0] }} ">
+      <!--<li class="nav-item has-treeview {{ active_menu('shippings')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-truck"></i>
           <p>
@@ -423,7 +451,7 @@
           </li>
 
         </ul>
-      </li>
+      </li>-->
 
 
 
