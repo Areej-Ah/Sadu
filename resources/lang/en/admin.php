@@ -114,6 +114,15 @@ return [
     'services'                 => 'Services',
     'investments'              => 'Investments',
     'social_media'              => 'Social Media',
+    'slider' => 'Slider',
+    'news' => 'News',
+    'title_en' => 'English Title',
+    'title_ar' => 'Arabic Title',
+    'text_en' => 'English Text',
+    'text_ar' => 'Arabic Text',
+    'image' => 'Image',
+
+
 
 
 
