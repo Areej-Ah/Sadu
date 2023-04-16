@@ -341,6 +341,33 @@
         </ul>
       </li>
 
+      <li class="nav-item has-treeview {{ active_menu('slider')[0] }} ">
+        <a href="#" class="nav-link ">
+          <i class="nav-icon fa fa-tags"></i>
+          <p>
+            {{ trans('admin.slider') }}
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview" style=" {{ active_menu('slider')[1] }} ">
+
+          <li class="nav-item">
+            <a href="{{aurl('slider')}}" class="nav-link">
+              <i class="fa fa-tags nav-icon"></i>
+              <p>{{ trans('admin.slider') }}</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{aurl('slider/create')}}" class="nav-link">
+              <i class="fa fa-plus nav-icon"></i>
+              <p>{{ trans('admin.add') }}</p>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
       <li class="nav-item has-treeview {{ active_menu('social_media')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-tags"></i>
