@@ -14,12 +14,12 @@
 
         <div class="form-group">
             {!! Form::label('description_ar', trans('admin.description_ar')) !!}
-            {!! Form::text('description_ar',old('description_ar'),['class'=>'form-control']) !!}
+            {!! Form::textarea('description_ar',old('description_ar'),['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('description_en', trans('admin.description_en')) !!}
-          {!! Form::text('description_en',old('description_en'),['class'=>'form-control']) !!}
+          {!! Form::textarea('description_en',old('description_en'),['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
