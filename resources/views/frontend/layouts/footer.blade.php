@@ -1,118 +1,77 @@
-<!-- Footer -->
-<footer id="footer" class="footer-light">
-    <div class="footer-content">
+<section class="half-section bg-light-blue">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2">
+            <div class="col text-center md-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.2s">
+                <i class="feather icon-feather-map-pin icon-small text-dark-golden-yellow margin-25px-bottom sm-margin-10px-bottom d-block"></i>
+                <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">العنوان</div>
+                <p class="w-70 lg-w-100 md-w-60 sm-w-75 sm-margin-10px-bottom mx-auto">{{ $setting->location_ar }}</p>
+            </div>
+            <div class="col text-center md-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.4s">
+                <i class="feather icon-feather-phone-call icon-small text-dark-golden-yellow margin-25px-bottom sm-margin-10px-bottom d-block"></i>
+                <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">إتصل بنا</div>
+                <p class="w-70 lg-w-100 sm-margin-10px-bottom mx-auto"> 1-800-222-000<br> 1-800-222-002</p>
+            </div>
+            <div class="col text-center last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.6s">
+                 <i class="feather icon-feather-mail icon-small text-dark-golden-yellow margin-25px-bottom sm-margin-10px-bottom d-block"></i>
+                <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">للمراسلة</div>
+                <p class="w-70 lg-w-100 sm-margin-10px-bottom mx-auto"><a href="mailto:{{ $setting->email }}" class="text-dark-golden-yellow-hover">{{ $setting->email }}</a><br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+<footer class="bg-extra-dark-gray footer-sticky">
+    <div class="footer-top padding-six-top lg-padding-eight-tb md-padding-50px-tb">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <!-- Footer widget area 1 -->
-                    <div class="widget clearfix widget-contact-us" style="background-image: url({{ url ('frontend/Polo/images/world-map-dark.png') }}); background-position: 50% 20px; background-repeat: no-repeat">
-                        <h4>About POLO</h4>
-                        <ul class="list-icon">
-                            <li><i class="fa fa-map-marker"></i> 795 Folsom Ave, Suite 600
-                                <br>San Francisco, CA 94107</li>
-                            <li><i class="fa fa-phone"></i> (123) 456-7890 </li>
-                            <li><i class="fa fa-envelope"></i> <a href="mailto:first.last@example.com">first.last@example.com</a>
-                            </li>
-                            <li>
-                                <br><i class="fa fa-clock-o"></i>Monday - Friday: <strong>08:00 - 22:00</strong>
-                                <br>Saturday, Sunday: <strong>Closed</strong>
-                            </li>
-                        </ul>
-                        <!-- Social icons -->
-                        <div class="social-icons social-icons-border float-left m-t-20">
-                            <ul>
-                                <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
-                                <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="social-vimeo"><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                <li class="social-youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                <li class="social-pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                <li class="social-gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
-                        </div>
-                        <!-- end: Social icons -->
-                    </div>
-                    <!-- end: Footer widget area 1 -->
+                <div class="col-12 col-xl-3 col-sm-6 order-sm-1 order-xl-0 lg-margin-50px-bottom xs-margin-25px-bottom">
+                    <a href="index.html" class="footer-logo margin-20px-bottom d-block"><img style="width: auto; height: 50px;" src="{{ url ('frontend/sadu/images/logo-white@2x.png') }}" data-at2x="{{ url ('frontend/sadu/images/logo-white@2x.png') }}" alt="" class="max-h-inherit"></a>
+                    <span class="alt-font font-weight-300 text-large line-height-36px text-white d-inline-block w-85">شركة تقدم خدمات تطوير الأعمال والحلول الإحترافية والتشغيلية والرقمية</span>
                 </div>
-                <div class="col-md-2">
-                    <!-- Footer widget area 2 -->
-                    <div class="widget">
-                        <h4>Quick LInks</h4>
-                        <ul class="list-icon list-icon-arrow">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Shortcodes</a></li>
+                <div class="col-12 col-xl-2 offset-xl-1 col-sm-6 order-sm-3 order-xl-0 xs-margin-25px-bottom">
+                    <span class="alt-font font-weight-600 d-block text-white margin-20px-bottom xs-margin-10px-bottom">عن الشركة</span>
+                    <ul>
+                        <li><a href="our-services.html" class="text-white-hover">من نحن</a></li>
+                        <li><a href="our-team.html" class="text-white-hover">الملف التعريفي</a></li>
+                        <li><a href="contact-us-classic.html" class="text-white-hover">مجالات العمل</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-2 offset-xl-1 col-sm-6 order-sm-4 order-xl-0 xs-margin-25px-bottom">
+                    <span class="alt-font font-weight-600 d-block text-white margin-20px-bottom xs-margin-10px-bottom">حلول الشركة</span>
+                    <ul>
+                        <li><a href="our-services.html" class="text-white-hover">الحلول الاحترافية</a></li>
+                        <li><a href="our-services.html" class="text-white-hover">الحلول التشغيلية</a></li>
+                        <li><a href="our-services.html" class="text-white-hover">الحلول الرقمية</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-2 offset-xl-1 col-sm-6 order-sm-2 order-xl-0 lg-margin-50px-bottom xs-no-margin-bottom">
+                    <span class="alt-font font-weight-600 d-block text-white margin-30px-bottom xs-margin-25px-bottom">تابعنا</span>
+                    <div class="social-icon-style-12">
+                        <ul class="extra-small-icon light">
+                            @foreach($socialMedia as $item)
+                                <li><a  href="{{ $item->link }}" target="_blank"><i class="fab {{ $item->icon }}"></i></a></li>
+                            @endforeach               
                         </ul>
                     </div>
-                    <!-- end: Footer widget area 2 -->
-                </div>
-                <div class="col-md-3">
-                    <!-- Footer widget area 3 -->
-                    <div class="widget">
-                        <h4>Latest From Our Blog</h4>
-                        <div class="post-thumbnail-list">
-                            <div class="post-thumbnail-entry">
-
-                                <div class="post-thumbnail-content">
-                                    <a href="#">Suspendisse consectetur fringilla luctus</a>
-                                    <span class="post-date"><i class="fa fa-clock-o"></i> 6m ago</span>
-                                    <span class="post-category"><i class="fa fa-tag"></i> Technology</span>
-                                </div>
-                            </div>
-                            <div class="post-thumbnail-entry">
-
-                                <div class="post-thumbnail-content">
-                                    <a href="#">Consectetur adipiscing elit</a>
-                                    <span class="post-date"><i class="fa fa-clock-o"></i> 24h ago</span>
-                                    <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
-                                </div>
-                            </div>
-                            <div class="post-thumbnail-entry">
-
-                                <div class="post-thumbnail-content">
-                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                                    <span class="post-date"><i class="fa fa-clock-o"></i> 11h ago</span>
-                                    <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end: Footer widget area 3 -->
-                </div>
-                <div class="col-md-3">
-                    <!-- Footer widget area 4 -->
-                    <div class="widget widget-tweeter" data-username="ardianmusliu" data-limit="2">
-                        <h4>Recent Tweets</h4>
-                    </div>
-                    <!-- end: Footer widget area 4 -->
                 </div>
             </div>
         </div>
     </div>
-    <div class="copyright-content">
+    <div class="footer-bottom padding-one-bottom padding-seven-top xs-no-padding-top">
         <div class="container">
-            <div class="copyright-text text-center">&copy; 2017 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="http://www.inspiro-media.com" target="_blank">INSPIRO</a>
+            <div class="row">
+                <div class="col-12 col-md-12 order-2 order-md-0 text-sm-center text-md-end last-paragraph-no-margin">
+                    <p class="text-white">&copy; 2023 جميع الحقوق محفوظة  </p>
+                </div>
+              
             </div>
         </div>
     </div>
 </footer>
-<!-- end: Footer -->
-
-</div>
-<!-- end: Wrapper -->
-
-<!-- Go to top button -->
-<a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
-<!--Plugins-->
-<script src="{{ url('frontend/Polo') }}/js/jquery.js"></script>
-<script src="{{ url('frontend/Polo') }}/js/plugins.js"></script>
-
-<!--Template functions-->
-<script src="{{ url('frontend/Polo') }}/js/functions.js"></script>
-
+<a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+<script type="text/javascript" src="{{ url('frontend/sadu') }}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{{ url('frontend/sadu') }}/js/theme-vendors.min.js"></script>
+<script type="text/javascript" src="{{ url('frontend/sadu') }}/js/main.js"></script>
 </body>
-
 </html>

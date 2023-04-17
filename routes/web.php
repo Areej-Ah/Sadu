@@ -5,9 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => 'Maintenance'], function () {
     
-    Route::get('/', function () {
-        return view('frontend.home');
-    });
+    Route::get('/', 'PagesController@home');
+    Route::get('/about', 'PagesController@about');
 
 });
 
