@@ -1,4 +1,4 @@
-<section class="half-section">
+<section class="half-section bg-light-blue">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-xl-4 col-lg-5 col-md-7 col-sm-9 text-center last-paragraph-no-margin margin-5-rem-bottom md-margin-3-rem-bottom wow animate__fadeIn">

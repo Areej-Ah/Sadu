@@ -4,7 +4,7 @@
             <div class="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
                 <a class="navbar-brand" href="{{ url ('/') }}">
                     <img src="{{ Storage::url(setting()->logo) }}" data-at2x="{{ Storage::url(setting()->logo) }}" class="default-logo" alt="{{ $setting->sitename_ar }}" title="{{ $setting->sitename_ar }}">
-                    <img src="{{ Storage::url(setting()->logo) }}" data-at2x="{{ Storage::url(setting()->logo) }}" class="alt-logo" alt="{{ $setting->sitename_ar }}" title="{{ $setting->sitename_ar }}">
+                    <img src="{{ Storage::url(setting()->logo) }}" data-at2x="{{ Storage::url(setting()->logo2) }}" class="alt-logo" alt="{{ $setting->sitename_ar }}" title="{{ $setting->sitename_ar }}">
                     <img src="{{ Storage::url(setting()->logo) }}" data-at2x="{{ Storage::url(setting()->logo) }}" class="mobile-logo" alt="{{ $setting->sitename_ar }}" title="{{ $setting->sitename_ar }}">
                 </a>
             </div>
@@ -17,10 +17,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                      <ul class="navbar-nav alt-font">
-                        <li class="nav-item"> <a href="#" class="nav-link">الرئيسية</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/') }}" class="nav-link">الرئيسية</a></li>
                         <li class="nav-item"> <a href="{{ url ('/about') }}" class="nav-link">من نحن</a></li>
                         <li class="nav-item dropdown simple-dropdown">
-                            <a href="#services" class="nav-link">حلولنا</a>
+                            <a href="{{ url ('/services') }}" class="nav-link">حلولنا</a>
                             <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
                             <ul class="dropdown-menu" role="menu">
                                 <li class="dropdown"><a href="javascript:void(0);">الخدمة الأولى</a></li>
@@ -28,21 +28,21 @@
                                 <li class="dropdown"><a href="javascript:void(0);">الخدمة الثالثة</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#domains" class="nav-link">مجالات عملنا</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/services') }}" class="nav-link">مجالات عملنا</a></li>
                         <li class="nav-item dropdown simple-dropdown">
                             <a href="#services" class="nav-link">المركز الإعلامي</a>
                             <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
                             <ul class="dropdown-menu" role="menu">
                                 <li class="dropdown"><a href="javascript:void(0);">الهوية</a></li>
-                                <li class="dropdown"><a href="javascript:void(0);">الأخبار</a></li>
+                                <li class="dropdown"><a href="{{ url ('/news') }}">الأخبار</a></li>
                                 <li class="dropdown"><a href="javascript:void(0);">صور وفيديو</a></li>
                                 <li class="dropdown"><a href="javascript:void(0);">التقرير السنوي</a></li>
                                 <li class="dropdown"><a href="javascript:void(0);">بروفايل الشركة</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#customers" class="nav-link">عملاؤنا</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/clients') }}" class="nav-link">عملاؤنا</a></li>
                         <li class="nav-item"> <a href="#suppliers" class="nav-link">بوابة الموردين</a></li>
-                        <li class="nav-item"> <a href="#contact" class="nav-link">تواصل معنا</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/contact') }}" class="nav-link">تواصل معنا</a></li>
                     </ul>
                 </div>
             </div>

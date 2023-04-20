@@ -1,4 +1,4 @@
-<section id="customers" class="padding-100px-tb md-padding-75px-tb sm-padding-40px-tb wow animate__fadeIn">
+<section id="customers" class="padding-100px-tb md-padding-75px-tb sm-padding-40px-tb wow animate__fadeIn bg-light-blue">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-xl-4 col-lg-5

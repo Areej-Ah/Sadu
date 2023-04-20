@@ -1,4 +1,4 @@
-<section class="half-section bg-light-blue">
+<section class="half-section">
     <div class="container">
         <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2">
             <div class="col text-center md-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.2s">
@@ -73,5 +73,6 @@
 <script type="text/javascript" src="{{ url('frontend/sadu') }}/js/jquery.min.js"></script>
 <script type="text/javascript" src="{{ url('frontend/sadu') }}/js/theme-vendors.min.js"></script>
 <script type="text/javascript" src="{{ url('frontend/sadu') }}/js/main.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

@@ -17,7 +17,8 @@
                     <div class="col-12 text-center">
                         <div class="d-flex flex-row align-item-start margin-15px-bottom xs-margin-10px-bottom justify-content-center">
                             <span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
-                            <h4 class="vertical-counter d-inline-flex text-dark-golden-yellow alt-font appear font-weight-600  mb-0" data-to="45" style="direction: ltr;"></h4>
+                            <h4 class="vertical-counter d-inline-flex text-dark-golden-yellow alt-font appear font-weight-600  mb-0" 
+                            data-to="{{ $setting->number_of_beneficiaries }}" style="direction: ltr;"></h4>
                         </div>
                         <span class="alt-font text-large d-block text-dark-golden-yellow">جهة مستفيدة</span>
                         <div class="w-100 h-1px bg-medium-gray margin-2-rem-tb xs-margin-3-rem-tb"></div>
@@ -25,7 +26,8 @@
                     <div class="col-12 text-center">
                         <div class="d-flex flex-row align-item-start margin-15px-bottom xs-margin-10px-bottom justify-content-center ">
                             <span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
-                            <h4 class="vertical-counter d-inline-flex text-dark-golden-yellow alt-font appear font-weight-600  mb-0 " data-to="1200" style="direction: ltr;"></h4>
+                            <h4 class="vertical-counter d-inline-flex text-dark-golden-yellow alt-font appear font-weight-600  mb-0 " 
+                            data-to="{{ $setting->number_of_employees}}" style="direction: ltr;"></h4>
                             
                         </div>
                         <span class="alt-font text-large d-block text-dark-golden-yellow">موظف</span>
@@ -34,7 +36,8 @@
                     <div class="col-12 text-center">
                         <div class="d-flex flex-row align-item-start margin-15px-bottom xs-margin-10px-bottom justify-content-center ">
                             <span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
-                            <h4 class="vertical-counter d-inline-flex text-dark-golden-yellow alt-font appear font-weight-600 mb-0" style="direction: ltr;" data-to="120"></h4>
+                            <h4 class="vertical-counter d-inline-flex text-dark-golden-yellow alt-font appear font-weight-600 mb-0" style="direction: ltr;" 
+                            data-to="{{ $setting->number_of_projects}}"></h4>
                         </div>
                         <span class="alt-font text-large d-block text-dark-golden-yellow">مشروعاً</span>
                     </div>

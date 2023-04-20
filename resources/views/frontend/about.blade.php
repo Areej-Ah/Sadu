@@ -8,8 +8,10 @@
         <div class="row align-items-end justify-content-center h-100">
             <div class="col-12 col-xl-6 col-lg-7 col-md-10 position-relative page-title-large text-center">
                 <span class="margin-15px-bottom alt-font  text-extra-large text-white d-block">سدو لحلول الأعمال</span>
-                <h1 class="text-white alt-font font-weight-500  margin-5-rem-bottom sm-margin-3-rem-bottom">تعرّف علينا</h1>
-                <span class="w-1px h-80px d-inline-block bg-white margin-5-rem-bottom sm-margin-3-rem-bottom sm-h-50px"></span>
+                <h1 class="text-white alt-font font-weight-500
+                           margin-5-rem-bottom sm-margin-3-rem-bottom">تعرّف علينا</h1>
+                <span class="w-1px h-80px d-inline-block
+                      bg-white margin-5-rem-bottom sm-margin-3-rem-bottom sm-h-50px"></span>
             </div>
         </div>
     </div>
@@ -23,7 +25,8 @@
         <div class="row align-items-center" style="flex-direction: row;">
             <div class="col-12 col-md-6 position-relative sm-margin-30px-bottom">
                 <img class="border-radius-5px" src="{{ url ('frontend/sadu/images/s1.jpg') }}" alt="" />
-                <a href="https://www.youtube.com/watch?v=35g7UMVbfPc" class="popup-youtube video-icon-box video-icon-large absolute-middle-center">
+                <a href="https://www.youtube.com/watch?v=35g7UMVbfPc"
+                        class="popup-youtube video-icon-box video-icon-large absolute-middle-center">
                     <span>
                         <span class="video-icon bg-gradient-magenta-orange-2">
                             <i class="icon-simple-line-control-play text-white"></i>
