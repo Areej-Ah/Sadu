@@ -43,8 +43,7 @@
             </div>
             <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
                 <h5 class="alt-font font-weight-500 text-extra-dark-gray w-90">سدو لحلول الأعمال</h5>
-                <p class="lg-w-90 text-extra-large">{{ $setting->description_ar }}</p>
-
+                <p class="lg-w-90 text-extra-large">{{ $setting->{'description_'.app()->getLocale()} }}</p>
             </div>
         </div>
     </div>
@@ -61,7 +60,7 @@
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
                         <span class="text-extra-medium alt-font text-dark-golden-yellow d-block margin-5px-bottom font-weight-500">الرؤية</span>
-                        <p>{{ $setting->vision_ar }}</p>
+                        <p>{{ $setting->{'vision_'.app()->getLocale()} }}</p>
                     </div>
                     <div class="feature-box-overlay bg-white border-radius-5px"></div>
                 </div>
