@@ -65,15 +65,15 @@ class SocialMediaController extends Controller
     }
 
 
-    public function edit(SocialMedia $media)
+    public function edit(SocialMedia $socialMedia)
     {
         $title=trans('admin.edit');
-        return view('admin.social_media.edit',compact('media','title'));
+        return view('admin.social_media.edit',compact('socialMedia','title'));
 
     }
 
 
-    public function update(SocialMedia $media, Request $request)
+    public function update(SocialMedia $socialMedia, Request $request)
     {
         $data = $this->validate(request(),
         [
@@ -96,7 +96,7 @@ class SocialMediaController extends Controller
 
 
 
-        SocialMedia::where('id',$media->id)->update($data);
+        SocialMedia::where('id',$socialMedia->id)->update($data);
         session()->flash('success',trans('admin.record_edited'));
         return redirect(aurl('social_media'));
 
@@ -104,10 +104,10 @@ class SocialMediaController extends Controller
 
 
 
-    public function destroy(SocialMedia $media)
+    public function destroy(SocialMedia $socialMedia)
     {
 
-        $media->delete();
+        $socialMedia->delete();
         session()->flash('success',trans('admin.record_deleted'));
         return redirect(aurl('social_media'));
     }
