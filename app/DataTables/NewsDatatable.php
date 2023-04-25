@@ -116,15 +116,15 @@ class NewsDatatable extends DataTable
             ->data('id')
             ->name('id'),
 
-            Column::make('name_ar')
-            ->title(trans('admin.name_ar'))
-            ->data('name_ar')
-            ->name('name_ar'),
+            Column::make('title_ar')
+            ->title(trans('admin.title_ar'))
+            ->data('title_ar')
+            ->name('title_ar'),
 
-            Column::make('name_en')
-            ->title(trans('admin.name_en'))
-            ->data('name_en')
-            ->name('name_en'),
+            Column::make('title_en')
+            ->title(trans('admin.title_en'))
+            ->data('title_en')
+            ->name('title_en'),
 
             Column::make('created_at')
             ->title(trans('admin.created_at'))

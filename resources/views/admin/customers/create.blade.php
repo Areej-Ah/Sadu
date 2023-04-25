@@ -22,6 +22,10 @@
           {!! Form::text('name_en',old('name_en'),['class'=>'form-control']) !!}
         </div>
 
+        <div class="form-group">
+          {!! Form::label('show', trans('admin.show')) !!}
+          {!! Form::select('show', ['1' => trans('admin.show'), '0' => trans('admin.hide')],old('show'),['class'=>'form-control']) !!}
+        </div>
 
 
 

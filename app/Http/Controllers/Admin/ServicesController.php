@@ -47,7 +47,8 @@ class ServicesController extends Controller
             'name_ar' => 'required',
             'description_ar' =>'required',
             'description_en' =>'required',
-            'icon'           => 'sometimes|nullable|'.validate_image()
+            'icon'           => 'sometimes|nullable|'.validate_image(),
+            'active'  => 'required',
 
         ],[],[
 
@@ -56,6 +57,7 @@ class ServicesController extends Controller
             'description_ar' => trans('admin.description_ar'),
             'description_en' => trans('admin.description_en'),
             'icon'    => trans('admin.icon'),
+            'active'    => trans('admin.active'),
         ]
 
         );
@@ -105,6 +107,7 @@ class ServicesController extends Controller
             'description_ar' =>'required',
             'description_en' =>'required',
             'icon'    => 'sometimes|nullable|'.validate_image(),
+            'active' => 'required',
 
         ],[],[
 
@@ -113,6 +116,7 @@ class ServicesController extends Controller
             'description_ar' => trans('admin.description_ar'),
             'description_en' => trans('admin.description_en'),
             'icon'    => trans('admin.icon'),
+            'active'    => trans('admin.active'),
         ]
 
         );

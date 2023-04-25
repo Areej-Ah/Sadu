@@ -23,6 +23,11 @@
           {!! Form::text('name_en',$customer->name_en,['class'=>'form-control']) !!}
         </div>
 
+        <div class="form-group">
+        {!! Form::label('show', trans('admin.show')) !!}
+        {!! Form::select('show', ['1' => trans('admin.show'), '0' => trans('admin.hide')],$customer->show,['class'=>'form-control']) !!}
+       </div>
+
 
 
         <div class="form-group">

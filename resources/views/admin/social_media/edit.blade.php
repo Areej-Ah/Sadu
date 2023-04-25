@@ -10,45 +10,36 @@
     </div>
     <!-- /.card-header -->
     <div class="card-body">
-    {!! Form::open(['url' => aurl('social_media/'.$media->id),'method' => 'put','files'=>true]) !!}
+    {!! Form::open(['url' => aurl('social_media/'.$socialMedia->id),'method' => 'put','files'=>true]) !!}
 
 
       <div class="form-group">
             {!! Form::label('name_ar', trans('admin.name_ar')) !!}
-            {!! Form::text('name_ar',$media->name_ar,['class'=>'form-control']) !!}
+            {!! Form::text('name_ar',$socialMedia->name_ar,['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('name_en', trans('admin.name_en')) !!}
-          {!! Form::text('name_en',$media->name_en,['class'=>'form-control']) !!}
+          {!! Form::text('name_en',$socialMedia->name_en,['class'=>'form-control']) !!}
         </div>
 
 
         <div class="form-group">
             {!! Form::label('link', trans('admin.link')) !!}
-            {!! Form::text('link',$media->link,['class'=>'form-control']) !!}
+            {!! Form::text('link',$socialMedia->link,['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
-        {!! Form::label('activation', trans('admin.activation')) !!}
-        {!! Form::select('active', ['1' => trans('admin.active'), '0' => trans('admin.inactive')],$category->active,['class'=>'form-control']) !!}
-       </div>
-
-        <div class="form-group">
-          <label for="exampleInputFile">{{ trans('admin.icon') }}</label>
-          <div class="input-group">
-            <div class="custom-file">
-              {!! Form::label('icon',trans('admin.icon'),['class'=>'custom-file-label']) !!}
-              {!! Form::file('icon',['class'=>'custom-file-input']) !!}
-
-            </div>
-          </div>
-
-          @if(!empty($media->icon))
+            {!! Form::label('icon', trans('admin.icon')) !!}
+            {!! Form::text('icon',$socialMedia->icon,['class'=>'form-control']) !!}
+        </div>
+        @if(!empty($socialMedia->icon))
             <br/>
             <div class="col-md-3 col-sm-12">
             <div class="info-box bg-light">
               <div class="info-box-content">
+
+              <i class="fab {{ $socialMedia->icon }}"></i>
 
               </span></span></div>
             </div>
@@ -56,7 +47,12 @@
             <br/>
           @endif
 
-        </div>
+        <div class="form-group">
+        {!! Form::label('activation', trans('admin.activation')) !!}
+        {!! Form::select('active', ['1' => trans('admin.active'), '0' => trans('admin.inactive')],$socialMedia->active,['class'=>'form-control']) !!}
+       </div>
+
+
         <br/>
 
 

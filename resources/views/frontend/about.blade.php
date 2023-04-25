@@ -24,8 +24,11 @@
     <div class="container">
         <div class="row align-items-center" style="flex-direction: row;">
             <div class="col-12 col-md-6 position-relative sm-margin-30px-bottom">
-                <img class="border-radius-5px" src="{{ url ('frontend/sadu/images/s1.jpg') }}" alt="" />
-                <a href="https://www.youtube.com/watch?v=35g7UMVbfPc"
+                <!--<img class="border-radius-5px" src="{{ url ('frontend/sadu/images/s1.jpg') }}" alt="" />-->
+                <video controls>
+                <source src="{{ Storage::url(setting()->video) }}" type="video/mp4">
+                </video>
+               <!-- <a href="https://www.youtube.com/watch?v=35g7UMVbfPc"
                         class="popup-youtube video-icon-box video-icon-large absolute-middle-center">
                     <span>
                         <span class="video-icon bg-gradient-magenta-orange-2">
@@ -36,12 +39,12 @@
                             </span>
                         </span>
                     </span>
-                </a>
+                </a> -->
             </div>
             <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
                 <h5 class="alt-font font-weight-500 text-extra-dark-gray w-90">سدو لحلول الأعمال</h5>
-                <p class="lg-w-90 text-extra-large">شركة سعودية تقدم خدمات تطوير الأعمال والحلول الاحترافية والتشغيلية والرقمية بطريقة فريدة ومبتكرة. نركّز على تعزيز أداء عملائنا لنصل معهم إلى مراحل تفوق توقعاتهم وأهدافهم.</p>
-                
+                <p class="lg-w-90 text-extra-large">{{ $setting->description_ar }}</p>
+
             </div>
         </div>
     </div>
@@ -58,7 +61,7 @@
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
                         <span class="text-extra-medium alt-font text-dark-golden-yellow d-block margin-5px-bottom font-weight-500">الرؤية</span>
-                        <p>شركة سعودية تقدم خدمات تطوير الأعمال والحلول الاحترافية والتشغيلية والرقمية بطريقة فريدة ومبتكرة. نركّز على تعزيز أداء عملائنا لنصل معهم إلى مراحل تفوق توقعاتهم وأهدافهم.</p>
+                        <p>{{ $setting->vision_ar }}</p>
                     </div>
                     <div class="feature-box-overlay bg-white border-radius-5px"></div>
                 </div>
@@ -71,7 +74,7 @@
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
                         <span class="text-extra-medium alt-font text-dark-golden-yellow text-gradient-orange-pink-hover d-block margin-5px-bottom font-weight-500">الرسالة</span>
-                        <p>شركة سعودية تقدم خدمات تطوير الأعمال والحلول الاحترافية والتشغيلية والرقمية بطريقة فريدة ومبتكرة. نركّز على تعزيز أداء عملائنا لنصل معهم إلى مراحل تفوق توقعاتهم وأهدافهم.</p>
+                        <p>{{ $setting->message_ar }}</p>
                     </div>
                     <div class="feature-box-overlay bg-white border-radius-5px"></div>
                 </div>
@@ -84,13 +87,13 @@
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
                         <span class="text-extra-medium alt-font text-dark-golden-yellow d-block margin-5px-bottom font-weight-500">الأهداف</span>
-                        <p>شركة سعودية تقدم خدمات تطوير الأعمال والحلول الاحترافية والتشغيلية والرقمية بطريقة فريدة ومبتكرة. نركّز على تعزيز أداء عملائنا لنصل معهم إلى مراحل تفوق توقعاتهم وأهدافهم.</p>
+                        <p>{{ $setting->values_ar }}</p>
                     </div>
                     <div class="feature-box-overlay bg-white border-radius-5px"></div>
                 </div>
             </div>
 
-            
+
         </div>
     </div>
 </section>
@@ -103,23 +106,23 @@
 
             <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.1s" style="direction: ltr;">
                 <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center ">
-                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600  mb-0 " data-to="24"></h2><span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
+                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600  mb-0 " data-to="{{ $setting->number_of_beneficiaries }}"></h2><span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
                 </div>
-                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">Countries</span>
+                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">جهة مستفيدة</span>
             </div>
 
             <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="direction: ltr;">
                 <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center">
-                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600  mb-0 " data-to="28"></h2><span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
+                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600  mb-0 " data-to="{{ $setting->number_of_employees}}"></h2><span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
                 </div>
-                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">Languages</span>
+                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">موظف</span>
             </div>
 
             <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.3s" style="direction: ltr;">
                 <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center ">
-                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600  mb-0 " data-to="72"></h2><span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
+                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600  mb-0 " data-to="{{$setting->number_of_projects}}"></h2><span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
                 </div>
-                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">Channels</span>
+                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">مشروع</span>
             </div>
 
         </div>

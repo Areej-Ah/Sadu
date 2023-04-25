@@ -31,16 +31,15 @@ class SocialMediaController extends Controller
     {
         $data = $this->validate(request(),
         [
-            'name_en' => 'required',
             'name_ar' => 'required',
+            'name_en' => 'required',
             'icon' => 'nullable',
-            'link'    => 'required',
+            'link'    => 'nullable',
             'active'  => 'required',
 
         ],[],[
-
-            'name_en' => trans('admin.name_en'),
             'name_ar' => trans('admin.name_ar'),
+            'name_en' => trans('admin.name_en'),
             'link'    => trans('admin.link'),
             'icon'    => trans('admin.icon'),
             'active'    => trans('admin.active'),
@@ -66,28 +65,28 @@ class SocialMediaController extends Controller
     }
 
 
-    public function edit(SocialMedia $media)
+    public function edit(SocialMedia $socialMedia)
     {
         $title=trans('admin.edit');
-        return view('admin.social_media.edit',compact('media','title'));
+        return view('admin.social_media.edit',compact('socialMedia','title'));
 
     }
 
 
-    public function update(SocialMedia $media, Request $request)
+    public function update(SocialMedia $socialMedia, Request $request)
     {
         $data = $this->validate(request(),
         [
-            'name_en' => 'required',
             'name_ar' => 'required',
+            'name_en' => 'required',
             'icon' => 'nullable',
-            'link'    => 'required',
+            'link'    => 'nullable',
             'active'  => 'required',
 
         ],[],[
 
-            'name_en' => trans('admin.name_en'),
             'name_ar' => trans('admin.name_ar'),
+            'name_en' => trans('admin.name_en'),
             'link'    => trans('admin.link'),
             'icon'    => trans('admin.icon'),
             'active'    => trans('admin.active'),
@@ -97,7 +96,7 @@ class SocialMediaController extends Controller
 
 
 
-        SocialMedia::where('id',$media->id)->update($data);
+        SocialMedia::where('id',$socialMedia->id)->update($data);
         session()->flash('success',trans('admin.record_edited'));
         return redirect(aurl('social_media'));
 
@@ -105,10 +104,10 @@ class SocialMediaController extends Controller
 
 
 
-    public function destroy(SocialMedia $media)
+    public function destroy(SocialMedia $socialMedia)
     {
 
-        $media->delete();
+        $socialMedia->delete();
         session()->flash('success',trans('admin.record_deleted'));
         return redirect(aurl('social_media'));
     }

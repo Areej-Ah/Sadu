@@ -20,10 +20,15 @@ class SettingsController extends Controller {
 		$validator = $this->validate(request(),[
 
 			'logo' => validate_image(),
-			'icon' => validate_image()], [],
+            'logo2' => validate_image(),
+			'icon' => validate_image(),
+            'video' => 'nullable',
+        ], [],
 			[
 			'logo' => trans('admin.logo'),
-			'icon' => trans('admin.icon')
+            'logo2' => trans('admin.logo2'),
+			'icon' => trans('admin.icon'),
+            'video' => trans('admin.video'),
 			]);
 
 	    $data=request()->except(['_token', '_method']);
@@ -43,6 +48,18 @@ class SettingsController extends Controller {
 			]);
 		}
 
+        if(request()->hasFile('logo2'))
+		{
+			$data['logo2']=up()->upload([
+
+			    //	'new_name'    => '',
+				'file'        => 'logo2',
+				'path'        => 'settings',
+				'upload_type' => 'single',
+				'delete_file' => setting()->logo2
+			]);
+		}
+
 		if(request()->hasFile('icon'))
 		{
 			$data['icon']=up()->upload([
@@ -52,6 +69,18 @@ class SettingsController extends Controller {
 				'path'        => 'settings',
 				'upload_type' => 'single',
 				'delete_file' => setting()->icon
+			]);
+		}
+
+        if(request()->hasFile('video'))
+		{
+			$data['video']=up()->upload([
+
+		    	//	'new_name'    => '',
+				'file'        => 'video',
+				'path'        => 'settings',
+				'upload_type' => 'single',
+				'delete_file' => setting()->video
 			]);
 		}
 

@@ -32,18 +32,13 @@
           {!! Form::select('active', ['1' => trans('admin.active'), '0' => trans('admin.inactive')],old('activation'),['class'=>'form-control']) !!}
         </div>
 
-
         <div class="form-group">
-          <label for="exampleInputFile">{{ trans('admin.icon') }}</label>
-          <div class="input-group">
-            <div class="custom-file">
-              {!! Form::label('icon',trans('admin.icon'),['class'=>'custom-file-label']) !!}
-              {!! Form::file('icon',['class'=>'custom-file-input']) !!}
-
-            </div>
-          </div>
+            {!! Form::label('icon', trans('admin.icon')) !!}
+            {!! Form::text('icon',old('icon'),['class'=>'form-control']) !!}
         </div>
-        <br/>
+
+
+
 
 
          {!! Form::submit(trans('admin.create'),['class' =>'btn btn-primary' ]) !!}

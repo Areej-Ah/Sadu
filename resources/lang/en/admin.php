@@ -121,6 +121,21 @@ return [
     'text_en' => 'English Text',
     'text_ar' => 'Arabic Text',
     'image' => 'Image',
+    'vision_ar'=> 'Vision in Arabic',
+    'vision_en' => 'Vision in English',
+    'message_ar'=> 'Message in Arabic',
+    'message_en'=> 'Message in English',
+    'values_ar'=> 'Values in Arabic',
+    'values_en'=> 'Values in English',
+    'team_experinces_ar'=> 'Team experinces in Arabic',
+    'team_experinces_en'=> 'Team experinces in English',
+    'location_ar' => 'Location in Arabic',
+    'location_en' => 'Location in English',
+    'customers' => 'Customers',
+    'show' => 'Show',
+    'hide' => 'Hide',
+    'link' => 'Link',
+
 
 
 
