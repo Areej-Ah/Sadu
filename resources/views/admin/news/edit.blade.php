@@ -15,7 +15,7 @@
 
       <div class="form-group">
             {!! Form::label('title_ar', trans('admin.title_ar')) !!}
-            {!! Form::text('title_ar',$news->name_ar,['class'=>'form-control']) !!}
+            {!! Form::text('title_ar',$news->title_ar,['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
@@ -35,7 +35,7 @@
 
         <div class="form-group">
         {!! Form::label('activation', trans('admin.activation')) !!}
-        {!! Form::select('active', ['1' => trans('admin.active'), '0' => trans('admin.inactive')],$category->active,['class'=>'form-control']) !!}
+        {!! Form::select('active', ['1' => trans('admin.active'), '0' => trans('admin.inactive')],$news->active,['class'=>'form-control']) !!}
        </div>
 
 

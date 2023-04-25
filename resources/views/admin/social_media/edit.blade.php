@@ -30,25 +30,16 @@
         </div>
 
         <div class="form-group">
-        {!! Form::label('activation', trans('admin.activation')) !!}
-        {!! Form::select('active', ['1' => trans('admin.active'), '0' => trans('admin.inactive')],$category->active,['class'=>'form-control']) !!}
-       </div>
-
-        <div class="form-group">
-          <label for="exampleInputFile">{{ trans('admin.icon') }}</label>
-          <div class="input-group">
-            <div class="custom-file">
-              {!! Form::label('icon',trans('admin.icon'),['class'=>'custom-file-label']) !!}
-              {!! Form::file('icon',['class'=>'custom-file-input']) !!}
-
-            </div>
-          </div>
-
-          @if(!empty($media->icon))
+            {!! Form::label('icon', trans('admin.icon')) !!}
+            {!! Form::text('icon',$media->icon,['class'=>'form-control']) !!}
+        </div>
+        @if(!empty($service->icon))
             <br/>
             <div class="col-md-3 col-sm-12">
             <div class="info-box bg-light">
               <div class="info-box-content">
+
+              <i class="fab {{ $media->icon }}"></i>
 
               </span></span></div>
             </div>
@@ -56,7 +47,12 @@
             <br/>
           @endif
 
-        </div>
+        <div class="form-group">
+        {!! Form::label('activation', trans('admin.activation')) !!}
+        {!! Form::select('active', ['1' => trans('admin.active'), '0' => trans('admin.inactive')],$media->active,['class'=>'form-control']) !!}
+       </div>
+
+
         <br/>
 
 

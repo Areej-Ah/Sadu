@@ -35,6 +35,11 @@
         </div>
 
         <div class="form-group">
+        {!! Form::label('activation', trans('admin.activation')) !!}
+        {!! Form::select('active', ['1' => trans('admin.active'), '0' => trans('admin.inactive')],$service->active,['class'=>'form-control']) !!}
+       </div>
+
+        <div class="form-group">
           <label for="exampleInputFile">{{ trans('admin.icon') }}</label>
           <div class="input-group">
             <div class="custom-file">

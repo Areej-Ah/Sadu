@@ -31,16 +31,15 @@ class SocialMediaController extends Controller
     {
         $data = $this->validate(request(),
         [
-            'name_en' => 'required',
             'name_ar' => 'required',
+            'name_en' => 'required',
             'icon' => 'nullable',
-            'link'    => 'required',
+            'link'    => 'nullable',
             'active'  => 'required',
 
         ],[],[
-
-            'name_en' => trans('admin.name_en'),
             'name_ar' => trans('admin.name_ar'),
+            'name_en' => trans('admin.name_en'),
             'link'    => trans('admin.link'),
             'icon'    => trans('admin.icon'),
             'active'    => trans('admin.active'),
@@ -78,16 +77,16 @@ class SocialMediaController extends Controller
     {
         $data = $this->validate(request(),
         [
-            'name_en' => 'required',
             'name_ar' => 'required',
+            'name_en' => 'required',
             'icon' => 'nullable',
-            'link'    => 'required',
+            'link'    => 'nullable',
             'active'  => 'required',
 
         ],[],[
 
-            'name_en' => trans('admin.name_en'),
             'name_ar' => trans('admin.name_ar'),
+            'name_en' => trans('admin.name_en'),
             'link'    => trans('admin.link'),
             'icon'    => trans('admin.icon'),
             'active'    => trans('admin.active'),

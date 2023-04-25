@@ -34,12 +34,14 @@ class CustomersController extends Controller
             'name_en' => 'required',
             'name_ar' => 'required',
             'logo'    => 'required|'.validate_image(),
+            'show'  => 'required',
 
         ],[],[
 
             'name_en' => trans('admin.name_en'),
             'name_ar' => trans('admin.name_ar'),
             'logo'    => trans('admin.logo'),
+            'show'    => trans('admin.show'),
         ]
 
         );
@@ -87,12 +89,15 @@ class CustomersController extends Controller
             'name_en' => 'required',
             'name_ar' => 'required',
             'logo'    => 'sometimes|nullable|'.validate_image(),
+            'show'  => 'required',
 
         ],[],[
 
             'name_en' => trans('admin.name_en'),
             'name_ar' => trans('admin.name_ar'),
             'logo'    => trans('admin.logo'),
+            'show'    => trans('admin.show'),
+
         ]
 
         );

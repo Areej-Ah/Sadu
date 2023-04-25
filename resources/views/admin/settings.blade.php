@@ -56,6 +56,61 @@
 
         </div>
 
+        <div class="form-group">
+            <label for="exampleInputFile">{{ trans('admin.logo2') }}</label>
+            <div class="input-group">
+              <div class="custom-file">
+                {!! Form::label('logo2',trans('admin.logo2'),['class'=>'custom-file-label']) !!}
+                {!! Form::file('logo2',['class'=>'custom-file-input']) !!}
+
+              </div>
+            </div>
+
+            @if(!empty(setting()->logo2))
+              <br/>
+              <div class="col-md-3 col-sm-12">
+              <div class="info-box bg-light">
+                <div class="info-box-content">
+
+                <center> <img style="width:auto; height:80px;" src="{{ Storage::url(setting()->logo2) }}" /></center>
+
+                </span></span></div>
+              </div>
+              </div>
+              <br/>
+            @endif
+
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputFile">{{ trans('admin.video') }}</label>
+            <div class="input-group">
+              <div class="custom-file">
+                {!! Form::label('video',trans('admin.video'),['class'=>'custom-file-label']) !!}
+                {!! Form::file('video',['class'=>'custom-file-input']) !!}
+
+              </div>
+            </div>
+
+            @if(!empty(setting()->video))
+              <br/>
+              <div class="col-md-3 col-sm-12">
+              <div class="info-box bg-light">
+                <div class="info-box-content">
+
+                <center>
+                <video width="auto" height="80px" controls>
+                <source src="{{ Storage::url(setting()->video) }}" type="video/mp4"></video>
+            </center>
+
+                </span></span></div>
+              </div>
+              </div>
+              <br/>
+            @endif
+
+        </div>
+
 
         <div class="form-group">
             <label for="exampleInputFile">{{ trans('admin.icon') }}</label>
@@ -86,8 +141,13 @@
         <br/>
 
         <div class="form-group">
-          {!! Form::label('description',trans('admin.description')) !!}
-          {!! Form::textarea('description',setting()->description,['class'=>'form-control']) !!}
+          {!! Form::label('description_en',trans('admin.description_en')) !!}
+          {!! Form::textarea('description_en',setting()->description_en,['class'=>'form-control']) !!}
+        </div>
+
+        <div class="form-group">
+          {!! Form::label('description_ar',trans('admin.description_ar')) !!}
+          {!! Form::textarea('description_ar',setting()->description_ar,['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
@@ -160,12 +220,37 @@
 
         <div class="form-group">
           {!! Form::label('location_ar',trans('admin.location_ar')) !!}
-          {!! Form::textarea('location_ar',setting()->location_ar,['class'=>'form-control']) !!}
+          {!! Form::text('location_ar',setting()->location_ar,['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('location_en',trans('admin.location_en')) !!}
-          {!! Form::textarea('location_en',setting()->location_en,['class'=>'form-control']) !!}
+          {!! Form::text('location_en',setting()->location_en,['class'=>'form-control']) !!}
+        </div>
+
+        <div class="form-group">
+          {!! Form::label('number_of_beneficiaries',trans('admin.number_of_beneficiaries')) !!}
+          {!! Form::text('number_of_beneficiaries',setting()->number_of_beneficiaries,['class'=>'form-control']) !!}
+        </div>
+
+        <div class="form-group">
+          {!! Form::label('number_of_employees',trans('admin.number_of_employees')) !!}
+          {!! Form::text('number_of_employees',setting()->number_of_employees,['class'=>'form-control']) !!}
+        </div>
+
+        <div class="form-group">
+          {!! Form::label('number_of_projects',trans('admin.number_of_projects')) !!}
+          {!! Form::text('number_of_projects',setting()->number_of_projects,['class'=>'form-control']) !!}
+        </div>
+
+        <div class="form-group">
+          {!! Form::label('phone',trans('admin.phone')) !!}
+          {!! Form::text('phone',setting()->phone,['class'=>'form-control']) !!}
+        </div>
+
+        <div class="form-group">
+          {!! Form::label('mobile',trans('admin.mobile')) !!}
+          {!! Form::text('mobile',setting()->mobile,['class'=>'form-control']) !!}
         </div>
 
         {!! Form::submit(trans('admin.save'),['class'=>'btn btn-primary']) !!}
