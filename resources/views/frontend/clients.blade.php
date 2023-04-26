@@ -26,7 +26,7 @@
         <div class="row row-cols-1 row-cols-lg-6 row-cols-sm-2 client-logo-style-07">
             @foreach($customers as $customer)
                 <div class="col text-center client-logo margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                    <a href="#"><img alt="{{ $customer->name_ar}}"  src="{{ Storage::url($customer->logo) }}"></a>
+                    <a href="#"><img alt="{{ $customer->{'name_'.session('lang')} }}"  src="{{ Storage::url($customer->logo) }}"></a>
                 </div>
             @endforeach
         </div>

@@ -15,9 +15,9 @@
             </div>
         </div>
     </div>
-    <video loop="" autoplay="" controls="" 
-           muted 
-           class="html-video" 
+    <video loop="" autoplay="" controls=""
+           muted
+           class="html-video"
            poster="https://via.placeholder.com/1920x1080">
         <source type="video/mp4" src="{{ url ('frontend/sadu/video/video.mp4') }}" />
     </video>
@@ -52,7 +52,7 @@
                                 <div class="post-details padding-30px-all xl-padding-25px-lr">
                                     <a href="/service/{{ $service->id}}"
                                        class="text-extra-dark-gray
-                                       font-weight-500 alt-font d-block">{{ $service->name_ar}} </a>
+                                       font-weight-500 alt-font d-block">{{ $service->{'name_'.session('lang')} }} </a>
                                 </div>
                             </div>
                         </li>
@@ -62,6 +62,6 @@
         </div>
     </div>
 </section>
- 
+
 
 @endsection

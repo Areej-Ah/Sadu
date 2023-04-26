@@ -4,7 +4,7 @@
             <div class="col text-center md-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.2s">
                 <i class="feather icon-feather-map-pin icon-small text-dark-golden-yellow margin-25px-bottom sm-margin-10px-bottom d-block"></i>
                 <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">العنوان</div>
-                <p class="w-70 lg-w-100 md-w-60 sm-w-75 sm-margin-10px-bottom mx-auto">{{ $setting->location_ar }}</p>
+                <p class="w-70 lg-w-100 md-w-60 sm-w-75 sm-margin-10px-bottom mx-auto">{{ $setting->{'location_'.session('lang')} }}</p>
             </div>
             <div class="col text-center md-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.4s">
                 <i class="feather icon-feather-phone-call icon-small text-dark-golden-yellow margin-25px-bottom sm-margin-10px-bottom d-block"></i>
@@ -51,7 +51,7 @@
                         <ul class="extra-small-icon light">
                             @foreach($socialMedia as $item)
                                 <li><a  href="{{ $item->link }}" target="_blank"><i class="fab {{ $item->icon }}"></i></a></li>
-                            @endforeach               
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                 <div class="col-12 col-md-12 order-2 order-md-0 text-sm-center text-md-end last-paragraph-no-margin">
                     <p class="text-white">&copy; 2023 جميع الحقوق محفوظة  </p>
                 </div>
-              
+
             </div>
         </div>
     </div>
