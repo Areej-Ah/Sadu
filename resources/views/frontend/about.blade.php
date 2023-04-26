@@ -24,12 +24,8 @@
     <div class="container">
         <div class="row align-items-center" style="flex-direction: row;">
             <div class="col-12 col-md-6 position-relative sm-margin-30px-bottom">
-                <!--<img class="border-radius-5px" src="{{ url ('frontend/sadu/images/s1.jpg') }}" alt="" />-->
-                <video controls>
-                <source src="{{ Storage::url(setting()->video) }}" type="video/mp4">
-                </video>
-               <!-- <a href="https://www.youtube.com/watch?v=35g7UMVbfPc"
-                        class="popup-youtube video-icon-box video-icon-large absolute-middle-center">
+                <img class="border-radius-5px" src="{{ url ('frontend/sadu/images/s1.jpg') }}" alt="" />
+                <a href="{{ Storage::url(setting()->video) }}" class="popup-youtube video-icon-box video-icon-large absolute-middle-center">
                     <span>
                         <span class="video-icon bg-gradient-magenta-orange-2">
                             <i class="icon-simple-line-control-play text-white"></i>
@@ -39,7 +35,7 @@
                             </span>
                         </span>
                     </span>
-                </a> -->
+                </a>
             </div>
             <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
                 <h5 class="alt-font font-weight-500 text-extra-dark-gray w-90">سدو لحلول الأعمال</h5>
