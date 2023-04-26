@@ -45,11 +45,14 @@
                         <img style="width: auto; height: 50px;" src="{{ Storage::url(setting()->logo) }}"
                              data-at2x="{{ Storage::url(setting()->logo) }}" alt="" class="max-h-inherit">
                     </a>
-                    <p class="alt-font font-weight-300 text-large line-height-36px text-white d-inline-block w-85">شركة تقدم خدمات تطوير الأعمال والحلول الإحترافية والتشغيلية والرقمية</p>
+                    <p class="alt-font font-weight-300 text-large line-height-36px text-white d-inline-block w-85">
+                              شركة تقدم خدمات تطوير الأعمال والحلول الإحترافية والتشغيلية والرقمية
+                    </p>
                     <p class="text-white">&copy; 2023 جميع الحقوق محفوظة  </p>
                 </div>
                 <div class="col-12 col-xl-2 col-sm-6 order-sm-3 order-xl-0 xs-margin-25px-bottom">
-                    <span class="alt-font font-weight-600 d-block text-white margin-20px-bottom xs-margin-10px-bottom">عن الشركة</span>
+                    <span class="alt-font font-weight-600 d-block text-white
+                                margin-20px-bottom xs-margin-10px-bottom">عن الشركة</span>
                     <ul>
                         <li><a href="{{ url ('/about') }}" class="text-white-hover">من نحن</a></li>
                         <li><a href="{{ url ('/') }}" class="text-white-hover">الملف التعريفي</a></li>
@@ -59,19 +62,29 @@
                     </ul>
                 </div>
                 <div class="col-12 col-xl-3 col-sm-6 order-sm-4 order-xl-0 xs-margin-25px-bottom">
-                    <span class="alt-font font-weight-600 d-block text-white margin-20px-bottom xs-margin-10px-bottom">حلول الشركة</span>
+                    <span class="alt-font font-weight-600 d-block text-white
+                                 margin-20px-bottom xs-margin-10px-bottom">حلول الشركة</span>
                     <ul>
                         @foreach($services as $service)
-                         <li><a href="/service/{{ $service->id}}" class="text-white-hover"> {{ $service->{'name_'.session('lang')} }} </a></li>
-                        @endforeach         
+                         <li>
+                            <a href="/service/{{ $service->id}}" class="text-white-hover">
+                                {{ $service->{'name_'.session('lang')} }}
+                            </a>
+                        </li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="col-12 col-xl-3  col-sm-6 order-sm-2 order-xl-0 lg-margin-50px-bottom xs-no-margin-bottom">
-                    <span class="alt-font font-weight-600 d-block text-white margin-30px-bottom xs-margin-25px-bottom">تابعنا</span>
+                    <span class="alt-font font-weight-600 d-block text-white
+                                margin-30px-bottom xs-margin-25px-bottom">تابعنا</span>
                     <div class="social-icon-style-12">
                         <ul class="extra-small-icon light">
                             @foreach($socialMedia as $item)
-                                <li><a  href="{{ $item->link }}" target="_blank"><i class="fab {{ $item->icon }}"></i></a></li>
+                                <li>
+                                    <a  href="{{ $item->link }}" target="_blank">
+                                        <i class="fab {{ $item->icon }}"></i>
+                                    </a>
+                                </li>
                             @endforeach
                         </ul>
                     </div>
