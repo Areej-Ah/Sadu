@@ -13,6 +13,7 @@ Route::group(['middleware' => 'Maintenance'], function () {
     Route::get('/new/{id}/', 'PagesController@new');
     Route::get('/clients', 'PagesController@clients');
     Route::get('/contact', 'PagesController@contact');
+    Route::get('/jobs', 'PagesController@jobs');
 
 });
 

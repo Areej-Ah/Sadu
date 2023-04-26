@@ -1,4 +1,4 @@
-<section class="half-section overlap-height wow animate__fadeIn">
+<section class="half-section overlap-height wow animate__fadeIn" id="about">
     <div class="container">
         <div class="row align-items-center overlap-gap-section">
             <div class="col-12 col-lg-5 col-md-8 order-md-2 order-lg-1 sm-margin-5-rem-bottom wow animate__fadeIn" data-wow-delay="0.1s">

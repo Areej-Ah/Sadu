@@ -19,15 +19,6 @@
                      <ul class="navbar-nav alt-font">
                         <li class="nav-item"> <a href="{{ url ('/') }}" class="nav-link">الرئيسية</a></li>
                         <li class="nav-item"> <a href="{{ url ('/about') }}" class="nav-link">من نحن</a></li>
-                        <li class="nav-item dropdown simple-dropdown">
-                            <a href="{{ url ('/services') }}" class="nav-link">حلولنا</a>
-                            <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
-                            <ul class="dropdown-menu" role="menu">
-                                <li class="dropdown"><a href="javascript:void(0);">الخدمة الأولى</a></li>
-                                <li class="dropdown"><a href="javascript:void(0);">الخدمة الثانية</a></li>
-                                <li class="dropdown"><a href="javascript:void(0);">الخدمة الثالثة</a></li>
-                            </ul>
-                        </li>
                         <li class="nav-item"> <a href="{{ url ('/services') }}" class="nav-link">مجالات عملنا</a></li>
                         <li class="nav-item dropdown simple-dropdown">
                             <a href="#services" class="nav-link">المركز الإعلامي</a>
@@ -42,25 +33,8 @@
                         </li>
                         <li class="nav-item"> <a href="{{ url ('/clients') }}" class="nav-link">عملاؤنا</a></li>
                         <li class="nav-item"> <a href="#suppliers" class="nav-link">بوابة الموردين</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/jobs') }}" class="nav-link">التوظيف</a></li>
                         <li class="nav-item"> <a href="{{ url ('/contact') }}" class="nav-link">تواصل معنا</a></li>
-                        <li class="nav-item dropdown">
-      <a class="nav-link" data-toggle="dropdown" href="#">
-        <i class="far fa fa-globe"></i>
-      </a>
-      <div class="dropdown-menu  dropdown-menu-right">
-
-
-        <a href="{{ url('lang/ar')}}" class="dropdown-item">
-          <i class="fas fa-globe mr-2"></i> عربي
-        </a>
-        <div class="dropdown-divider"></div>
-        <a href="{{ url('lang/en')}}" class="dropdown-item">
-          <i class="fas fa-globe mr-2"></i> English
-        </a>
-
-      </div>
-    </li>
-
                     </ul>
                 </div>
             </div>
@@ -69,6 +43,13 @@
                     @foreach($socialMedia as $item)
                         <a href="{{ $item->link }}" target="_blank"><i class="fab {{ $item->icon }}"></i></a>
                     @endforeach
+                </div>
+                <div class="header-language dropdown d-lg-inline-block">
+                    <a href="javascript:void(0);"><i class="feather icon-feather-globe"></i></a>
+                    <ul class="dropdown-menu alt-font">
+                        <li><a href="{{ url('lang/en')}}" title="English"><span class="icon-country"><img src="{{ url ('frontend/sadu/images/country-flag-16X16/usa.png') }}" alt=""></span>English</a></li>
+                        <li><a href="{{ url('lang/ar')}}" title="Arabic"><span class="icon-country"><img src="{{ url ('frontend/sadu/images/country-flag-16X16/Saudi Arabia.png') }}" alt=""></span>عربي</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

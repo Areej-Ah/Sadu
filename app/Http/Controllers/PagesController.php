@@ -92,6 +92,13 @@ class PagesController extends Controller
         return view('frontend.contact', compact('setting', 'socialMedia'));
     }
 
+    public function jobs()
+    {
+        $setting= Setting::first();
+        $socialMedia= SocialMedia::all();
+
+        return view('frontend.jobs', compact('setting', 'socialMedia'));
+    }
 
 
     public function post(Post $post)
