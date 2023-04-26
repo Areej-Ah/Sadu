@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::group(['middleware' => 'Maintenance'], function () {
-    
+
     Route::get('/', 'PagesController@home');
     Route::get('/about', 'PagesController@about');
     Route::get('/services', 'PagesController@services');
@@ -25,4 +25,12 @@ Route::get('maintenance', function () {
     }
 
     return view('frontend.maintenance');
+});
+Route::get('lang/{lang}',function($lang){
+
+    session()->has('lang') ?session()->forget('lang') :'';
+    $lang == 'ar' ?session()->put('lang','ar'): session()->put('lang','en');
+
+    return back();
+
 });

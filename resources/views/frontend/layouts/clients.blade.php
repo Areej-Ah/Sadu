@@ -30,9 +30,9 @@
                     <div class="swiper-wrapper">
                         @foreach($customers as $customer)
                             <div class="swiper-slide"><a href="#" target="_blank">
-                                <img alt="{{ $customer->name_ar}}" src="{{ Storage::url($customer->logo) }}"></a>
+                                <img alt="{{ $customer->{'name_'.session('lang')} }}" src="{{ Storage::url($customer->logo) }}"></a>
                             </div>
-                        @endforeach      
+                        @endforeach
                     </div>
                 </div>
             </div>

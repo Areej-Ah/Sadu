@@ -19,7 +19,7 @@
                     <div class="blog-text d-inline-block w-100">
                         <div class="content padding-3-rem-all lg-padding-4-half-rem-all xs-padding-20px-lr xs-padding-40px-tb position-relative mx-auto  lg-w-100">
                             <div class="blog-details-overlap text-small font-weight-500 bg-dark-orange alt-font text-white "><a href="blog-classic.html" class="text-white">أحدث التغريدات</a></div>
-                            
+
                              <div class="scrollbar" id="style-2" style=" overflow-y: scroll; height:400px;   ">
                                <a class="twitter-timeline" href="https://twitter.com/Sadu_co">Tweets by @Sadu_co</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                     <br>
@@ -43,7 +43,7 @@
                                     </a>
                                     <a href="/new/{{ $new->id}}" class="alt-font font-weight-500 text-extra-dark-gray
                                                                         margin-5px-bottom d-block line-height-22px">
-                                        {{ $new->title_ar}}
+                                        {{ $new->{'title_'.session('lang')} }}
                                     </a>
                                     <span class="text-extra-small alt-font">
                                         <a href="/new/{{ $new->id}}">المزيد</a>
@@ -57,3 +57,4 @@
         </div>
     </div>
 </section>
+
