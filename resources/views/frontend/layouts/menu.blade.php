@@ -43,21 +43,23 @@
                         <li class="nav-item"> <a href="{{ url ('/clients') }}" class="nav-link">عملاؤنا</a></li>
                         <li class="nav-item"> <a href="#suppliers" class="nav-link">بوابة الموردين</a></li>
                         <li class="nav-item"> <a href="{{ url ('/contact') }}" class="nav-link">تواصل معنا</a></li>
-                        <li class="nav-item dropdown simple-dropdown">
-                            <a class="nav-link" data-toggle="dropdown" href="#">
-                            <i class="far fa fa-globe"></i>
-                            </a>
-                            <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
-                            <ul class="dropdown-menu" role="menu">
-                            @foreach (config('app.available_locales') as $locale)
-                            <li class="dropdown"><a href="{{ request()->url() }}?language={{ $locale }}">
-                                [{{ strtoupper($locale) }}]
-                            </a></li>
+                        <li class="nav-item dropdown">
+      <a class="nav-link" data-toggle="dropdown" href="#">
+        <i class="far fa fa-globe"></i>
+      </a>
+      <div class="dropdown-menu  dropdown-menu-right">
 
-                        @endforeach
 
-                            </ul>
-                            </li>
+        <a href="{{ url('lang/ar')}}" class="dropdown-item">
+          <i class="fas fa-globe mr-2"></i> عربي
+        </a>
+        <div class="dropdown-divider"></div>
+        <a href="{{ url('lang/en')}}" class="dropdown-item">
+          <i class="fas fa-globe mr-2"></i> English
+        </a>
+
+      </div>
+    </li>
 
                     </ul>
                 </div>

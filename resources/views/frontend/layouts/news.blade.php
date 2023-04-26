@@ -43,7 +43,7 @@
                                     </a>
                                     <a href="/new/{{ $new->id}}" class="alt-font font-weight-500 text-extra-dark-gray
                                                                         margin-5px-bottom d-block line-height-22px">
-                                        {{ $new->{'title_'.app()->getLocale()} }}
+                                        {{ $new->{'title_'.session('lang')} }}
                                     </a>
                                     <span class="text-extra-small alt-font">
                                         <a href="/new/{{ $new->id}}">المزيد</a>
@@ -57,3 +57,4 @@
         </div>
     </div>
 </section>
+

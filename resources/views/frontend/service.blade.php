@@ -10,7 +10,7 @@
                 <span class="margin-15px-bottom alt-font  text-extra-large text-white d-block">سدو لحلول الأعمال</span>
                 <h1 class="text-white alt-font font-weight-500
                            margin-5-rem-bottom sm-margin-3-rem-bottom">
-                           {{ $service->name_ar}}
+                           {{ $service->{'name_'.session('lang')} }}
                 </h1>
                 <span class="w-1px h-80px d-inline-block
                             bg-white margin-5-rem-bottom sm-margin-3-rem-bottom sm-h-50px"></span>
@@ -28,7 +28,7 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-12 col-lg-5 col-md-9 md-margin-7-rem-bottom">
                 <h6 class="alt-font font-weight-600
-                           text-extra-dark-gray w-95">{{ $service->name_ar}}</h6>
+                           text-extra-dark-gray w-95">{{ $service->{'name_'.session('lang')} }}</h6>
                 <p class="w-80 lg-w-95">
                     {{ $service->description_ar}}
                 </p>

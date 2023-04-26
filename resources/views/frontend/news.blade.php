@@ -40,7 +40,7 @@
                                     <a href="/new/{{ $new->id}}"
                                     class="alt-font font-weight-500 text-extra-medium
                                     text-green d-block margin-20px-bottom
-                                    xs-margin-10px-bottom">{{ $new->title_ar}}</a>
+                                    xs-margin-10px-bottom">{{ $new->{'title_'.session('lang')} }}</a>
                                     <p class="w-95"> {{ \Illuminate\Support\Str::limit(strip_tags($new->text_ar), 70) }} </p>
                                     <span class="separator bg-gradient-fast-blue-purple"></span>
                                     <a href="/new/{{ $new->id}}" class="alt-font font-weight-500
