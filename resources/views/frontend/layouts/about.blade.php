@@ -6,7 +6,7 @@
                 <p class="w-80 lg-w-100 text-extra-large">
                     {{ $setting->description_ar }}
                 </p>
-                <a href="about-us.html" class="btn btn-fancy btn-box-shadow btn-medium btn-neon-orange align-self-start margin-25px-top">اقرأ المزيد</a>
+                <a href="{{ url ('/about') }}" class="btn btn-fancy btn-box-shadow btn-medium btn-neon-orange align-self-start margin-25px-top">اقرأ المزيد</a>
 
             </div>
             <div class="col-12 col-lg-4 order-md-1 order-lg-2 md-margin-5-rem-bottom wow animate__fadeIn" data-wow-delay="0.3s">
