@@ -85,7 +85,7 @@ class SettingsController extends Controller {
 		}
 
 		Setting::orderBy('id', 'desc')->update($data);
-		session()->put('lang',$data['main_lang']);
+		//session()->put('lang',$data['main_lang']);
 		session()->flash('success', trans('admin.record_edited'));
 		return redirect(aurl('settings'));
 	}

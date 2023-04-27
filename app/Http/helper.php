@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if (!function_exists('setting')) {
 	function setting() {
@@ -86,7 +86,7 @@ if (!function_exists('active_menu'))
 
        }
     }
-    
+
 }
 
 
@@ -96,12 +96,12 @@ if (!function_exists('admin'))
     {
         return auth()->guard('admin');
     }
-    
+
 }
 
 
 
-if (!function_exists('lang'))
+/*if (!function_exists('lang'))
 {
     function lang ()
     {
@@ -110,19 +110,33 @@ if (!function_exists('lang'))
        }else{
         session()->put('lang',setting()->main_lang);
         return setting()->main_lang;
-       } 
+       }
     }
-    
+
+}*/
+
+if (!function_exists('lang'))
+{
+    function lang ()
+    {
+        $main_lang= 'ar';
+       if(session()->has('lang')) {
+        return session('lang');
+       }else{
+        return session()->put('lang',$main_lang);
+       }
+    }
+
 }
 
 if (!function_exists('direction'))
 {
-    
+
     function direction ()
     {
-       if(session()->has('lang')) 
+       if(session()->has('lang'))
        {
-       
+
             if(session('lang')== 'ar')
             {
                 return 'rtl';
@@ -142,10 +156,10 @@ if (!function_exists('direction'))
             {
                 return 'ltr';
             }
-        
+
        }
    }
-    
+
 }
 
 
@@ -178,7 +192,7 @@ if (!function_exists('datatable_lang'))
             ],
         ];
     }
-    
+
 }
 
 
@@ -205,3 +219,5 @@ if (!function_exists('validate_image'))
 
 
 /////////    Validate Helper Functions  ///////
+
+
