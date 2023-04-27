@@ -7,9 +7,9 @@
     <div class="container h-100">
         <div class="row align-items-end justify-content-center h-100">
             <div class="col-12 col-xl-6 col-lg-7 col-md-10 position-relative page-title-large text-center">
-                <span class="margin-15px-bottom alt-font  text-extra-large text-white d-block">سدو لحلول الأعمال</span>
+                <span class="margin-15px-bottom alt-font  text-extra-large text-white d-block">{{ trans('admin.intro') }}</span>
                 <h1 class="text-white alt-font font-weight-500
-                           margin-5-rem-bottom sm-margin-3-rem-bottom">أخبارنا</h1>
+                           margin-5-rem-bottom sm-margin-3-rem-bottom">{{ trans('admin.our_news') }}</h1>
                 <span class="w-1px h-80px d-inline-block bg-white
                              margin-5-rem-bottom sm-margin-3-rem-bottom sm-h-50px"></span>
             </div>
@@ -42,14 +42,14 @@
                                     class="alt-font font-weight-500 text-extra-medium
                                     text-green d-block margin-20px-bottom
                                     xs-margin-10px-bottom">{{ $new->{'title_'.session('lang')} }}</a>
-                                    <p class="w-95">
-                                        {{ \Illuminate\Support\Str::limit(strip_tags($new->text_ar), 70) }}
-                                    </p>
+
+                                    <p class="w-95"> {{ \Illuminate\Support\Str::limit(strip_tags($new->{'text_'.session('lang')}), 70) }} </p>
+
                                     <span class="separator bg-gradient-fast-blue-purple"></span>
                                     <a href="/new/{{ $new->id}}" class="alt-font font-weight-500
                                                                               text-extra-small text-uppercase
                                                                               text-green">
-                                        اقرأ المزيد
+                                                                              {{ trans('admin.read_more') }}
                                     </a>
                                 </div>
                             </div>

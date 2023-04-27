@@ -9,7 +9,7 @@
                         md-margin-3-rem-bottom
                         wow animate__fadeIn">
                 <h5 class="alt-font font-weight-600 text-extra-dark-gray margin-20px-bottom sm-margin-10px-bottom">
-                    عملاؤنا
+                {{ trans('admin.clients') }}
                 </h5>
             </div>
         </div>

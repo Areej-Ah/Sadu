@@ -229,17 +229,17 @@
         </div>
 
         <div class="form-group">
-          {!! Form::label('number_of_beneficiaries',trans('admin.number_of_beneficiaries')) !!}
+          {!! Form::label('number_of_beneficiaries',trans('admin.beneficiaries')) !!}
           {!! Form::text('number_of_beneficiaries',setting()->number_of_beneficiaries,['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
-          {!! Form::label('number_of_employees',trans('admin.number_of_employees')) !!}
+          {!! Form::label('number_of_employees',trans('admin.employee')) !!}
           {!! Form::text('number_of_employees',setting()->number_of_employees,['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
-          {!! Form::label('number_of_projects',trans('admin.number_of_projects')) !!}
+          {!! Form::label('number_of_projects',trans('admin.projects')) !!}
           {!! Form::text('number_of_projects',setting()->number_of_projects,['class'=>'form-control']) !!}
         </div>
 

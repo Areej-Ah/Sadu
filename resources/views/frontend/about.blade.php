@@ -7,9 +7,9 @@
     <div class="container h-100">
         <div class="row align-items-end justify-content-center h-100">
             <div class="col-12 col-xl-6 col-lg-7 col-md-10 position-relative page-title-large text-center">
-                <span class="margin-15px-bottom alt-font  text-extra-large text-white d-block">سدو لحلول الأعمال</span>
+                <span class="margin-15px-bottom alt-font  text-extra-large text-white d-block">{{ trans('admin.intro') }}</span>
                 <h1 class="text-white alt-font font-weight-500
-                           margin-5-rem-bottom sm-margin-3-rem-bottom">تعرّف علينا</h1>
+                           margin-5-rem-bottom sm-margin-3-rem-bottom">{{ trans('admin.know_us') }}</h1>
                 <span class="w-1px h-80px d-inline-block
                       bg-white margin-5-rem-bottom sm-margin-3-rem-bottom sm-h-50px"></span>
             </div>
@@ -39,7 +39,7 @@
                 </a>
             </div>
             <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
-                <h5 class="alt-font font-weight-500 text-extra-dark-gray w-90">سدو لحلول الأعمال</h5>
+                <h5 class="alt-font font-weight-500 text-extra-dark-gray w-90">{{ trans('admin.intro') }}</h5>
                 <p class="lg-w-90 text-extra-large">{{ $setting->{'description_'.session('lang')} }}</p>
             </div>
         </div>
@@ -58,8 +58,9 @@
                                   margin-40px-bottom md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
-                        <span class="text-extra-medium alt-font text-dark-golden-yellow d-block
-                                     margin-5px-bottom font-weight-500">الرؤية</span>
+
+                        <span class="text-extra-medium alt-font text-dark-golden-yellow d-block margin-5px-bottom font-weight-500">{{ trans('admin.vision') }}</span>
+
                         <p>{{ $setting->{'vision_'.session('lang')} }}</p>
                     </div>
                     <div class="feature-box-overlay bg-white border-radius-5px"></div>
@@ -74,9 +75,9 @@
                                   margin-40px-bottom md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
-                        <span class="text-extra-medium alt-font text-dark-golden-yellow
-                                     text-gradient-orange-pink-hover d-block
-                                    margin-5px-bottom font-weight-500">الرسالة</span>
+
+                        <span class="text-extra-medium alt-font text-dark-golden-yellow text-gradient-orange-pink-hover d-block margin-5px-bottom font-weight-500">{{ trans('admin.message') }}</span>
+
                         <p>{{ $setting->{'message_'.session('lang')} }}</p>
                     </div>
                     <div class="feature-box-overlay bg-white border-radius-5px"></div>
@@ -91,8 +92,9 @@
                                   md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
-                        <span class="text-extra-medium alt-font text-dark-golden-yellow d-block margin-5px-bottom
-                                     font-weight-500">الأهداف</span>
+
+                        <span class="text-extra-medium alt-font text-dark-golden-yellow d-block margin-5px-bottom font-weight-500">{{ trans('admin.goals') }}</span>
+
                         <p>{{ $setting->{'values_'.session('lang')} }}</p>
                     </div>
                     <div class="feature-box-overlay bg-white border-radius-5px"></div>
@@ -119,8 +121,9 @@
                                <span class="text-dark-golden-yellow title-extra-small
                                      font-weight-500 margin-5px-left">+</span>
                 </div>
-                <span class="alt-font text-extra-large  d-block text-white"
-                      style="text-align: center;">جهة مستفيدة</span>
+
+                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{{ trans('admin.beneficiaries') }}</span>
+
             </div>
 
             <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom
@@ -131,7 +134,7 @@
                                <span class="text-dark-golden-yellow title-extra-small
                                             font-weight-500 margin-5px-left">+</span>
                 </div>
-                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">موظف</span>
+                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{{ trans('admin.employee') }}</span>
             </div>
 
             <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start xs-margin-40px-bottom
@@ -142,7 +145,7 @@
                                <span class="text-dark-golden-yellow title-extra-small
                                             font-weight-500 margin-5px-left">+</span>
                 </div>
-                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">مشروع</span>
+                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{{ trans('admin.projects') }}</span>
             </div>
 
         </div>

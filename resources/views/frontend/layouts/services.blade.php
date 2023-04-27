@@ -4,9 +4,9 @@
             <div class="col-12 col-xl-4 col-lg-5 col-md-7 col-sm-9 text-center
                         last-paragraph-no-margin margin-5-rem-bottom md-margin-3-rem-bottom wow animate__fadeIn">
                 <h5 class="alt-font font-weight-600 text-extra-dark-gray  margin-20px-bottom sm-margin-10px-bottom">
-                    مجالات عملنا
+                {{ trans('admin.our_areas_of_works') }}
                 </h5>
-                <span>منظومة متكاملة من الخدمات بنهج مبتكر وأداء محكم  <br/> وفق أعلى معايير الجودة </span>
+                <span> {{ trans('admin.services_intro') }} <br/> {{ trans('admin.quality') }} </span>
             </div>
         </div>
     </div>
