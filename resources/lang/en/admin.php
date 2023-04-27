@@ -182,6 +182,7 @@ return [
     'job_email' => 'Please Email Us',
     'footer_text' => 'A company that provides business development services and professional, operational and digital solutions',
     'latest_tweets' => 'Latest Tweets',
+    'suppliers_gate' => 'Suppliers Gate',
 
 
 
