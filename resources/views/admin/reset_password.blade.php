@@ -21,7 +21,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="{{ url('/') }}/frontend/adminlte/index2.html"><b>Admin</b>LTE</a>
+    <a href="{{ url('/') }}/admin"><b>Admin</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">

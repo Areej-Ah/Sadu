@@ -30,8 +30,9 @@ class PagesController extends Controller
     {
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
+        $services= Service::all();
 
-        return view('frontend.about', compact('setting', 'socialMedia'));
+        return view('frontend.about', compact('setting', 'socialMedia', 'services'));
     }
 
 
@@ -50,8 +51,9 @@ class PagesController extends Controller
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
         $service = Service::find($id);
+        $services= Service::all();
 
-        return view('frontend.service', compact('setting', 'socialMedia', 'service'));
+        return view('frontend.service', compact('setting', 'socialMedia', 'service', 'services'));
     }
 
 
@@ -60,8 +62,9 @@ class PagesController extends Controller
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
         $news= News::all();
+        $services= Service::all();
 
-        return view('frontend.news', compact('setting', 'socialMedia', 'news'));
+        return view('frontend.news', compact('setting', 'socialMedia', 'news', 'services'));
     }
 
     public function clients()
@@ -69,8 +72,9 @@ class PagesController extends Controller
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
         $customers= Customer::all();
+        $services= Service::all();
 
-        return view('frontend.clients', compact('setting', 'socialMedia', 'customers'));
+        return view('frontend.clients', compact('setting', 'socialMedia', 'customers', 'services'));
     }
 
 
@@ -79,8 +83,9 @@ class PagesController extends Controller
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
         $new = News::find($id);
+        $services= Service::all();
         
-        return view('frontend.new_item', compact('setting', 'socialMedia', 'new'));
+        return view('frontend.new_item', compact('setting', 'socialMedia', 'new', 'services'));
     }
 
 
@@ -88,25 +93,18 @@ class PagesController extends Controller
     {
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
+        $services= Service::all();
 
-        return view('frontend.contact', compact('setting', 'socialMedia'));
+        return view('frontend.contact', compact('setting', 'socialMedia', 'services'));
     }
 
     public function jobs()
     {
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
+        $services= Service::all();
 
-        return view('frontend.jobs', compact('setting', 'socialMedia'));
+        return view('frontend.jobs', compact('setting', 'socialMedia', 'services'));
     }
-
-
-    public function post(Post $post)
-    {
-        $stop_comment = DB :: table('settings')->where('name', 'stop_comment')->value('value');
-        $post= DB::table('posts')->find($id);
-        return view('content.post',compact('post','stop_comment'));
-    }
-    
 
 }

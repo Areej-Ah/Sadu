@@ -8,7 +8,7 @@
   <a href="index3.html" class="brand-link">
     <img src="{{ url('frontend/adminlte')}}/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
          style="opacity: .8">
-    <span class="brand-text font-weight-light">AdminLTE 3</span>
+    <span class="brand-text font-weight-light">Admin Panel</span>
   </a>
 
   <!-- Sidebar -->
@@ -54,7 +54,7 @@
 
         <li class="nav-item has-treeview {{ active_menu('admin')[0] }}">
           <a href="#" class="nav-link ">
-            <i class="nav-icon fa fa-users"></i>
+            <i class="nav-icon fa fa-user-secret"></i>
             <p>
               {{ trans('admin.admin') }}
               <i class="right fas fa-angle-left"></i>
@@ -63,7 +63,7 @@
           <ul class="nav nav-treeview" style="{{ active_menu('admin')[1] }}">
             <li class="nav-item">
               <a href="{{aurl('admin')}}" class="nav-link">
-                <i class="fa fa-users nav-icon"></i>
+                <i class="fa fa-user-secret nav-icon"></i>
                 <p>{{ trans('admin.admin') }}</p>
               </a>
             </li>
@@ -72,7 +72,7 @@
         </li>
 
 
-        <li class="nav-item has-treeview {{ active_menu('users')[0] }} ">
+        {{--  <li class="nav-item has-treeview {{ active_menu('users')[0] }} ">
           <a href="#" class="nav-link ">
             <i class="nav-icon fa fa-users"></i>
             <p>
@@ -112,10 +112,10 @@
             </li>
 
           </ul>
-        </li>
+        </li>  --}}
 
 
-        <!--<li class="nav-item has-treeview {{ active_menu('countries')[0] }} ">
+        {{--  <li class="nav-item has-treeview {{ active_menu('countries')[0] }} ">
           <a href="#" class="nav-link ">
             <i class="nav-icon fa fa-flag"></i>
             <p>
@@ -140,10 +140,10 @@
             </li>
 
           </ul>
-        </li>
+        </li>  --}}
 
 
-        <li class="nav-item has-treeview {{ active_menu('cities')[0] }} ">
+        {{--  <li class="nav-item has-treeview {{ active_menu('cities')[0] }} ">
           <a href="#" class="nav-link ">
             <i class="nav-icon fa fa-flag"></i>
             <p>
@@ -168,11 +168,11 @@
             </li>
 
           </ul>
-        </li>
+        </li>  --}}
 
 
 
-        <li class="nav-item has-treeview {{ active_menu('states')[0] }} ">
+        {{--  <li class="nav-item has-treeview {{ active_menu('states')[0] }} ">
           <a href="#" class="nav-link ">
             <i class="nav-icon fa fa-flag"></i>
             <p>
@@ -197,7 +197,7 @@
             </li>
 
           </ul>
-        </li>-->
+        </li>  --}}
 
 
 
@@ -232,7 +232,7 @@
 
       <li class="nav-item has-treeview {{ active_menu('services')[0] }} ">
         <a href="#" class="nav-link ">
-          <i class="nav-icon fa fa-list"></i>
+          <i class="nav-icon fa fa-briefcase"></i>
           <p>
             {{ trans('admin.services') }}
             <i class="right fas fa-angle-left"></i>
@@ -242,7 +242,7 @@
 
           <li class="nav-item">
             <a href="{{aurl('services')}}" class="nav-link">
-              <i class="fa fa-list nav-icon"></i>
+              <i class="fa fa-briefcase nav-icon"></i>
               <p>{{ trans('admin.services') }}</p>
             </a>
           </li>
@@ -259,7 +259,7 @@
 
       <li class="nav-item has-treeview {{ active_menu('customers')[0] }} ">
         <a href="#" class="nav-link ">
-          <i class="nav-icon fa fa-list"></i>
+          <i class="nav-icon fa fa-handshake"></i>
           <p>
             {{ trans('admin.customers') }}
             <i class="right fas fa-angle-left"></i>
@@ -269,7 +269,7 @@
 
           <li class="nav-item">
             <a href="{{aurl('customers')}}" class="nav-link">
-              <i class="fa fa-list nav-icon"></i>
+              <i class="fa fa-handshake nav-icon"></i>
               <p>{{ trans('admin.customers') }}</p>
             </a>
           </li>
@@ -284,7 +284,7 @@
         </ul>
       </li>
 
-      <li class="nav-item has-treeview {{ active_menu('investments')[0] }} ">
+      {{--  <li class="nav-item has-treeview {{ active_menu('investments')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-list"></i>
           <p>
@@ -309,11 +309,11 @@
           </li>
 
         </ul>
-      </li>
+      </li>  --}}
 
 
 
-      <!--<li class="nav-item has-treeview {{ active_menu('brands')[0] }} ">
+      {{--  <li class="nav-item has-treeview {{ active_menu('brands')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-tags"></i>
           <p>
@@ -338,12 +338,12 @@
           </li>
 
         </ul>
-      </li>-->
+      </li>  --}}
 
 
       <li class="nav-item has-treeview {{ active_menu('news')[0] }} ">
         <a href="#" class="nav-link ">
-          <i class="nav-icon fa fa-tags"></i>
+          <i class="nav-icon fa fa-newspaper"></i>
           <p>
             {{ trans('admin.news') }}
             <i class="right fas fa-angle-left"></i>
@@ -353,7 +353,7 @@
 
           <li class="nav-item">
             <a href="{{aurl('news')}}" class="nav-link">
-              <i class="fa fa-tags nav-icon"></i>
+              <i class="fa fa-newspaper nav-icon"></i>
               <p>{{ trans('admin.news') }}</p>
             </a>
           </li>
@@ -370,7 +370,7 @@
 
       <li class="nav-item has-treeview {{ active_menu('slider')[0] }} ">
         <a href="#" class="nav-link ">
-          <i class="nav-icon fa fa-tags"></i>
+          <i class="nav-icon fa fa-image"></i>
           <p>
             {{ trans('admin.slider') }}
             <i class="right fas fa-angle-left"></i>
@@ -380,7 +380,7 @@
 
           <li class="nav-item">
             <a href="{{aurl('slider')}}" class="nav-link">
-              <i class="fa fa-tags nav-icon"></i>
+              <i class="fa fa-image nav-icon"></i>
               <p>{{ trans('admin.slider') }}</p>
             </a>
           </li>
@@ -397,7 +397,7 @@
 
       <li class="nav-item has-treeview {{ active_menu('social_media')[0] }} ">
         <a href="#" class="nav-link ">
-          <i class="nav-icon fa fa-tags"></i>
+          <i class="nav-icon fa fa-bullhorn"></i>
           <p>
             {{ trans('admin.social_media') }}
             <i class="right fas fa-angle-left"></i>
@@ -407,7 +407,7 @@
 
           <li class="nav-item">
             <a href="{{aurl('social_media')}}" class="nav-link">
-              <i class="fa fa-tags nav-icon"></i>
+              <i class="fa fa-bullhorn nav-icon"></i>
               <p>{{ trans('admin.social_media') }}</p>
             </a>
           </li>
@@ -422,7 +422,7 @@
         </ul>
       </li>
 
-      <!--<li class="nav-item has-treeview {{ active_menu('factories')[0] }} ">
+      {{--  <li class="nav-item has-treeview {{ active_menu('factories')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-address-card"></i>
           <p>
@@ -447,11 +447,11 @@
           </li>
 
         </ul>
-      </li>-->
+      </li>  --}}
 
 
 
-      <!--<li class="nav-item has-treeview {{ active_menu('malls')[0] }} ">
+      {{--  <li class="nav-item has-treeview {{ active_menu('malls')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-building"></i>
           <p>
@@ -476,11 +476,11 @@
           </li>
 
         </ul>
-      </li> -->
+      </li>  --}}
 
 
 
-      <!--<li class="nav-item has-treeview {{ active_menu('shippings')[0] }} ">
+      {{--  <li class="nav-item has-treeview {{ active_menu('shippings')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-truck"></i>
           <p>
@@ -505,14 +505,14 @@
           </li>
 
         </ul>
-      </li>-->
+      </li>  --}}
 
 
 
 
-      <li class="nav-item has-treeview {{ active_menu('attributes')[0] }} ">
+      {{--  <li class="nav-item has-treeview {{ active_menu('attributes')[0] }} ">
         <a href="#" class="nav-link ">
-          <i class="nav-icon fa fa-bars"></i>
+          <i class="nav-icon fa fa-tags"></i>
           <p>
             {{ trans('admin.attributes') }}
             <i class="right fas fa-angle-left"></i>
@@ -523,7 +523,7 @@
 
           <li class="nav-item">
             <a href="{{aurl('attribute_families')}}" class="nav-link">
-              <i class="fa fa-bars nav-icon"></i>
+              <i class="fa fa-tags nav-icon"></i>
               <p>{{ trans('admin.attribute_family_id') }}</p>
             </a>
           </li>
@@ -552,7 +552,7 @@
           </li>
 
         </ul>
-      </li>
+      </li>  --}}
 
 
 

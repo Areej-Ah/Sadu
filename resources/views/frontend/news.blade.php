@@ -31,7 +31,8 @@
                     @foreach($news as $new)
                         <li class="grid-item wow animate__fadeIn" data-wow-delay="0.2s">
                             <div class="blog-post">
-                                <div class="blog-post-image margin-40px-bottom md-margin-35px-bottom xs-margin-25px-bottom">
+                                <div class="blog-post-image margin-40px-bottom
+                                            md-margin-35px-bottom xs-margin-25px-bottom">
                                     <a href="/new/{{ $new->id}}">
                                         <img src="{{ Storage::url($new->image) }}" alt=""/>
                                     </a>
@@ -41,7 +42,9 @@
                                     class="alt-font font-weight-500 text-extra-medium
                                     text-green d-block margin-20px-bottom
                                     xs-margin-10px-bottom">{{ $new->{'title_'.session('lang')} }}</a>
+
                                     <p class="w-95"> {{ \Illuminate\Support\Str::limit(strip_tags($new->{'text_'.session('lang')}), 70) }} </p>
+
                                     <span class="separator bg-gradient-fast-blue-purple"></span>
                                     <a href="/new/{{ $new->id}}" class="alt-font font-weight-500
                                                                               text-extra-small text-uppercase

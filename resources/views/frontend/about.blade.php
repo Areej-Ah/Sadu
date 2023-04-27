@@ -25,7 +25,8 @@
         <div class="row align-items-center" style="flex-direction: row;">
             <div class="col-12 col-md-6 position-relative sm-margin-30px-bottom">
                 <img class="border-radius-5px" src="{{ url ('frontend/sadu/images/s1.jpg') }}" alt="" />
-                <a href="{{ Storage::url(setting()->video) }}" class="popup-youtube video-icon-box video-icon-large absolute-middle-center">
+                <a href="{{ Storage::url(setting()->video) }}"
+                   class="popup-youtube video-icon-box video-icon-large absolute-middle-center">
                     <span>
                         <span class="video-icon bg-gradient-magenta-orange-2">
                             <i class="icon-simple-line-control-play text-white"></i>
@@ -50,12 +51,16 @@
         <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2">
 
             <div class="col wow animate__fadeIn" data-wow-delay="0.2s">
-                <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr xs-padding-fifteen-tb xs-padding-eight-lr">
+                <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr
+                            xs-padding-fifteen-tb xs-padding-eight-lr">
                     <div class="feature-box-icon">
-                        <i class="line-icon-Navigation-LeftWindow icon-medium text-dark-golden-yellow margin-40px-bottom md-margin-20px-bottom"></i>
+                        <i class="line-icon-Navigation-LeftWindow icon-medium text-dark-golden-yellow
+                                  margin-40px-bottom md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
+
                         <span class="text-extra-medium alt-font text-dark-golden-yellow d-block margin-5px-bottom font-weight-500">{{ trans('admin.vision') }}</span>
+
                         <p>{{ $setting->{'vision_'.session('lang')} }}</p>
                     </div>
                     <div class="feature-box-overlay bg-white border-radius-5px"></div>
@@ -63,12 +68,16 @@
             </div>
 
             <div class="col wow animate__fadeIn" data-wow-delay="0.4s">
-                <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr xs-padding-fifteen-tb xs-padding-eight-lr">
+                <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr
+                            xs-padding-fifteen-tb xs-padding-eight-lr">
                     <div class="feature-box-icon">
-                        <i class="line-icon-Cursor-Click2 icon-medium text-dark-golden-yellow margin-40px-bottom md-margin-20px-bottom"></i>
+                        <i class="line-icon-Cursor-Click2 icon-medium text-dark-golden-yellow
+                                  margin-40px-bottom md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
+
                         <span class="text-extra-medium alt-font text-dark-golden-yellow text-gradient-orange-pink-hover d-block margin-5px-bottom font-weight-500">{{ trans('admin.message') }}</span>
+
                         <p>{{ $setting->{'message_'.session('lang')} }}</p>
                     </div>
                     <div class="feature-box-overlay bg-white border-radius-5px"></div>
@@ -76,12 +85,16 @@
             </div>
 
             <div class="col wow animate__fadeIn" data-wow-delay="0.6s">
-                <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr xs-padding-fifteen-tb xs-padding-eight-lr">
+                <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr xs-padding-fifteen-tb
+                            xs-padding-eight-lr">
                     <div class="feature-box-icon">
-                        <i class="line-icon-Like-2 icon-medium text-dark-golden-yellow margin-40px-bottom md-margin-20px-bottom"></i>
+                        <i class="line-icon-Like-2 icon-medium text-dark-golden-yellow margin-40px-bottom
+                                  md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
+
                         <span class="text-extra-medium alt-font text-dark-golden-yellow d-block margin-5px-bottom font-weight-500">{{ trans('admin.goals') }}</span>
+
                         <p>{{ $setting->{'values_'.session('lang')} }}</p>
                     </div>
                     <div class="feature-box-overlay bg-white border-radius-5px"></div>
@@ -94,28 +107,43 @@
 </section>
 
 
-<section class="half-section parallax" data-parallax-background-ratio="0.1" style="background-image: url({{ url ('frontend/sadu/images/statistics.jpg') }});">
+<section class="half-section parallax" data-parallax-background-ratio="0.1"
+        style="background-image: url({{ url ('frontend/sadu/images/statistics.jpg') }});">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="row">
 
-            <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.1s" style="direction: ltr;">
+            <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom
+                        xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.1s" style="direction: ltr;">
                 <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center ">
-                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600  mb-0 " data-to="{{ $setting->number_of_beneficiaries }}"></h2><span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
+                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600
+                               mb-0 " data-to="{{ $setting->number_of_beneficiaries }}"></h2>
+                               <span class="text-dark-golden-yellow title-extra-small
+                                     font-weight-500 margin-5px-left">+</span>
                 </div>
+
                 <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{{ trans('admin.beneficiaries') }}</span>
+
             </div>
 
-            <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="direction: ltr;">
+            <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom
+                        xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="direction: ltr;">
                 <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center">
-                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600  mb-0 " data-to="{{ $setting->number_of_employees}}"></h2><span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
+                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear
+                               font-weight-600  mb-0 " data-to="{{ $setting->number_of_employees}}"></h2>
+                               <span class="text-dark-golden-yellow title-extra-small
+                                            font-weight-500 margin-5px-left">+</span>
                 </div>
                 <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{{ trans('admin.employee') }}</span>
             </div>
 
-            <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.3s" style="direction: ltr;">
+            <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start xs-margin-40px-bottom
+                        wow animate__fadeIn" data-wow-delay="0.3s" style="direction: ltr;">
                 <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center ">
-                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600  mb-0 " data-to="{{$setting->number_of_projects}}"></h2><span class="text-dark-golden-yellow title-extra-small font-weight-500 margin-5px-left">+</span>
+                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear
+                               font-weight-600  mb-0 " data-to="{{$setting->number_of_projects}}"></h2>
+                               <span class="text-dark-golden-yellow title-extra-small
+                                            font-weight-500 margin-5px-left">+</span>
                 </div>
                 <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{{ trans('admin.projects') }}</span>
             </div>
