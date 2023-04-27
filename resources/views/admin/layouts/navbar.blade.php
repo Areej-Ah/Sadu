@@ -202,7 +202,7 @@
 
 
 
-      <li class="nav-item has-treeview {{ active_menu('categories')[0] }} ">
+      {{--  <li class="nav-item has-treeview {{ active_menu('categories')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-list"></i>
           <p>
@@ -227,7 +227,7 @@
           </li>
 
         </ul>
-      </li>
+      </li>  --}}
 
 
       <li class="nav-item has-treeview {{ active_menu('services')[0] }} ">

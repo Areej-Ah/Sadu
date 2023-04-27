@@ -48,8 +48,8 @@
         <div class="row">
             <div class="col-md-12 px-0">
                 <div class="map-style-3 h-500px xs-h-300px">
-                    <iframe class="w-100 h-100 filter-grayscale-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.843821917424!2d144.956054!3d-37.817127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1427947693651"></iframe>
+                    <iframe class="w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25448.97026354119!2d46.67612696427033!3d24.77405161693461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efd6bcc07e21f%3A0x8f1afedac6acac4c!2z2LTYsdmD2Kkg2LPYr9mIINmE2K3ZhNmI2YQg2KfZhNin2LnZhdin2YQ!5e0!3m2!1sen!2ssa!4v1682603747340!5m2!1sen!2ssa"></iframe>
                 </div>
             </div>
         </div>
