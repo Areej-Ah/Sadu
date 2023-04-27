@@ -7,7 +7,7 @@
     <div class="container h-100">
         <div class="row align-items-end justify-content-center h-100">
             <div class="col-12 col-xl-6 col-lg-7 col-md-10 position-relative page-title-large text-center">
-                <span class="margin-15px-bottom alt-font  text-extra-large text-white d-block">سدو لحلول الأعمال</span>
+                <span class="margin-15px-bottom alt-font  text-extra-large text-white d-block">{{ trans('admin.intro') }}</span>
                 <h1 class="text-white alt-font font-weight-500
                            margin-5-rem-bottom sm-margin-3-rem-bottom">{{ $new->{'title_'.session('lang')} }} </h1>
                 <span class="w-1px h-80px d-inline-block bg-white
