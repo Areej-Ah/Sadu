@@ -48,7 +48,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"> <a href="{{ url ('/clients') }}" class="nav-link">{{ trans('admin.clients') }}</a></li>
-                        <!--<li class="nav-item"> <a href="#suppliers" class="nav-link">بوابة الموردين</a></li>-->
+                        <li class="nav-item"> <a href="#suppliers" class="nav-link">{{ trans('admin.suppliers_gate') }}</a></li>
                         <li class="nav-item"> <a href="{{ url ('/jobs') }}" class="nav-link">{{ trans('admin.employment') }}</a></li>
                         <li class="nav-item"> <a href="{{ url ('/contact') }}" class="nav-link">{{ trans('admin.contact_us') }}</a></li>
                     </ul>
