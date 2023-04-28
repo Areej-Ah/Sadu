@@ -83,32 +83,8 @@
         </div>
 
         <div class="form-group">
-            <label for="exampleInputFile">{{ trans('admin.video') }}</label>
-            <div class="input-group">
-              <div class="custom-file">
-                {!! Form::label('video',trans('admin.video'),['class'=>'custom-file-label']) !!}
-                {!! Form::file('video',['class'=>'custom-file-input']) !!}
-
-              </div>
-            </div>
-
-            @if(!empty(setting()->video))
-              <br/>
-              <div class="col-md-3 col-sm-12">
-              <div class="info-box bg-light">
-                <div class="info-box-content">
-
-                <center>
-                <video width="auto" height="80px" controls>
-                <source src="{{ Storage::url(setting()->video) }}" type="video/mp4"></video>
-            </center>
-
-                </span></span></div>
-              </div>
-              </div>
-              <br/>
-            @endif
-
+                {!! Form::label('video',trans('admin.video')) !!}
+                {!! Form::text('video',setting()->video,['class'=>'form-control']) !!}
         </div>
 
 
