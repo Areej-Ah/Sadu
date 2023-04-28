@@ -127,7 +127,7 @@ class ServicesController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'icon',
-				'path'        => 'services',
+				'path'        => 'public/services',
                 'upload_type' => 'single',
                 'delete_file' => Service::find($service->id)->icon
 			]);

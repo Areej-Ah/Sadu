@@ -59,7 +59,7 @@ class ShippingsController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'shippings',
+				'path'        => 'public/shippings',
                 'upload_type' => 'single',
                 'delete_file' => '',
 			]);
@@ -121,7 +121,7 @@ class ShippingsController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'shippings',
+				'path'        => 'public/shippings',
                 'upload_type' => 'single',
                 'delete_file' => Shipping::find($shipping->id)->logo
 			]);

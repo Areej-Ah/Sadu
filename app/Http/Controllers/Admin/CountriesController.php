@@ -54,7 +54,7 @@ class CountriesController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'countries',
+				'path'        => 'public/countries',
                 'upload_type' => 'single',
                 'delete_file' => '',
 			]);
@@ -111,7 +111,7 @@ class CountriesController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'countries',
+				'path'        => 'public/countries',
                 'upload_type' => 'single',
                 'delete_file' => Country::find($country->id)->logo
 			]);

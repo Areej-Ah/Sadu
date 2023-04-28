@@ -50,7 +50,7 @@ class BrandsController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'brands',
+				'path'        => 'public/brands',
                 'upload_type' => 'single',
                 'delete_file' => '',
 			]);
@@ -103,7 +103,7 @@ class BrandsController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'brands',
+				'path'        => 'public/brands',
                 'upload_type' => 'single',
                 'delete_file' => Brand::find($brand->id)->logo
 			]);

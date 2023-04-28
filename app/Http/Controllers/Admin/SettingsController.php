@@ -42,7 +42,7 @@ class SettingsController extends Controller {
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'settings',
+				'path'        => 'public/settings',
 				'upload_type' => 'single',
 				'delete_file' => setting()->logo
 			]);
@@ -54,7 +54,7 @@ class SettingsController extends Controller {
 
 			    //	'new_name'    => '',
 				'file'        => 'logo2',
-				'path'        => 'settings',
+				'path'        => 'public/settings',
 				'upload_type' => 'single',
 				'delete_file' => setting()->logo2
 			]);
@@ -66,7 +66,7 @@ class SettingsController extends Controller {
 
 		    	//	'new_name'    => '',
 				'file'        => 'icon',
-				'path'        => 'settings',
+				'path'        => 'public/settings',
 				'upload_type' => 'single',
 				'delete_file' => setting()->icon
 			]);

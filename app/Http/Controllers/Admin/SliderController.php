@@ -57,7 +57,7 @@ class SliderController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'image',
-				'path'        => 'slider',
+				'path'        => 'public/sliders',
                 'upload_type' => 'single',
                 'delete_file' => '',
 			]);

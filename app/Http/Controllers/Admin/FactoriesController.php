@@ -71,7 +71,7 @@ class FactoriesController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'factories',
+				'path'        => 'public/factories',
                 'upload_type' => 'single',
                 'delete_file' => '',
 			]);
@@ -145,7 +145,7 @@ class FactoriesController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'factories',
+				'path'        => 'public/factories',
                 'upload_type' => 'single',
                 'delete_file' => Factory::find($factory->id)->logo
 			]);

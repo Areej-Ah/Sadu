@@ -52,7 +52,7 @@ class CustomersController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'customers',
+				'path'        => 'public/customers',
                 'upload_type' => 'single',
                 'delete_file' => '',
 			]);
@@ -108,7 +108,7 @@ class CustomersController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'customers',
+				'path'        => 'public/customers',
                 'upload_type' => 'single',
                 'delete_file' => Customer::find($customer->id)->logo
 			]);

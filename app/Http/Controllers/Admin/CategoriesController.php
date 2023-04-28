@@ -60,7 +60,7 @@ class CategoriesController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'icon',
-				'path'        => 'categories',
+				'path'        => 'public/categories',
                 'upload_type' => 'single',
                 'delete_file' => '',
 			]);

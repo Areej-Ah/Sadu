@@ -37,7 +37,7 @@
                                         </div>
                                         <a href="/service/{{ $service->id}}"
                                            class="btn btn-fancy btn-small btn-white
-                                                  margin-15px-top btn-round-edge-small">اقرأ المزيد</a>
+                                                  margin-15px-top btn-round-edge-small"> {{ trans('admin.read_more') }} </a>
                                     </div>
                                 </div>
                             </div>

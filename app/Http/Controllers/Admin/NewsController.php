@@ -57,7 +57,7 @@ class NewsController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'image',
-				'path'        => 'news',
+				'path'        => 'public/news',
                 'upload_type' => 'single',
                 'delete_file' => '',
 			]);

@@ -71,7 +71,7 @@ class MallsController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'malls',
+				'path'        => 'public/malls',
                 'upload_type' => 'single',
                 'delete_file' => '',
 			]);
@@ -145,7 +145,7 @@ class MallsController extends Controller
 
 			    //	'new_name'    => '',
 				'file'        => 'logo',
-				'path'        => 'malls',
+				'path'        => 'public/malls',
                 'upload_type' => 'single',
                 'delete_file' => Mall::find($mall->id)->logo
 			]);
