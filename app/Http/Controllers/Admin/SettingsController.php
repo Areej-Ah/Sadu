@@ -34,8 +34,6 @@ class SettingsController extends Controller {
 	    $data=request()->except(['_token', '_method']);
 
 
-		session()->forget('lang');
-
 		if(request()->hasFile('logo'))
 		{
 			$data['logo']=up()->upload([

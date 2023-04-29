@@ -53,8 +53,6 @@ if (!function_exists('load_dep')) {
 }
 
 
-
-
 if (!function_exists('up')) {
 	function up() {
 		return new \App\Http\Controllers\UploadController;
@@ -100,30 +98,16 @@ if (!function_exists('admin'))
 }
 
 
-
-/*if (!function_exists('lang'))
-{
-    function lang ()
-    {
-       if(session()->has('lang')) {
-        return session('lang');
-       }else{
-        session()->put('lang',setting()->main_lang);
-        return setting()->main_lang;
-       }
-    }
-
-}*/
-
 if (!function_exists('lang'))
 {
-    function lang ()
+    function lang()
     {
-        $main_lang= 'ar';
-       if(session()->has('lang')) {
+       $mainLang= 'ar';
+
+       if (session()->has('lang')) {
         return session('lang');
-       }else{
-        return session()->put('lang',$main_lang);
+       }else {
+        return session()->put('lang', $mainLang);
        }
     }
 
@@ -132,28 +116,19 @@ if (!function_exists('lang'))
 if (!function_exists('direction'))
 {
 
-    function direction ()
+    function direction()
     {
-       if(session()->has('lang'))
-       {
+       if (session()->has('lang')) {
 
-            if(session('lang')== 'ar')
-            {
+            if (session('lang')== 'ar') {
                 return 'rtl';
-            }
-            else
-            {
+            }else {
                 return 'ltr';
             }
-       }
-       else
-       {
-            if (setting()->main_lang == 'ar')
-            {
+       }else {
+            if (setting()->main_lang == 'ar') {
                 return 'rtl';
-            }
-            else
-            {
+            } else {
                 return 'ltr';
             }
 
@@ -204,12 +179,9 @@ if (!function_exists('validate_image'))
     function validate_image($ext = null)
     {
 
-        if ($ext === null)
-        {
+        if ($ext === null) {
             return 'image|mimes:jpg,jpeg,png,gif,bmp';
-        }
-        else
-        {
+        }else {
             return 'image|mimes:'.$ext;
         }
 
