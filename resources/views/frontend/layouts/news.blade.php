@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="row" style="flex-direction:row;">
-            <div class="col-12 col-lg-8 blog-content padding-50px-right
+            <div class="col-12 col-lg-6 blog-content padding-50px-right
                         d-flex flex-wrap align-items-start md-padding-15px-right
                             md-margin-70px-bottom sm-margin-50px-bottom">
                 <div class="col-12 blog-post-content bg-white border-all border-color-medium-gray p-0 text-center">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 blog-sidebar">
+            <div class="col-12 col-lg-6 blog-sidebar">
                 <ul class="blog-widget position-relative" style="direction: ltr;">
                     @foreach($news as $new)
                         <li>
