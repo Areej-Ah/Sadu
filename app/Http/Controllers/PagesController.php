@@ -18,7 +18,7 @@ class PagesController extends Controller
     {
         $setting= Setting::first();
         $services= Service::all();
-        $news= News::all();
+        $news= News::take(4)->get();
         $customers= Customer::all();
         $socialMedia= SocialMedia::all();
 

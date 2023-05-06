@@ -156,7 +156,7 @@ return [
     'news_intro' => 'Follow The Latest News and Events',
     'services_intro' => 'An Integrated System Of Services With An Innovative Approach and Tight Performance',
     'quality' => 'According To The Highest Quality Standards',
-    'goals'=> 'Goals',
+    'values'=> 'Values',
     'message' => 'Message',
     'vision' => 'Vision',
     'intro' => 'Sadu For Business Solutions',
@@ -180,7 +180,6 @@ return [
     'job_intro' => 'We Will Be Glad To Have You Join Us' ,
     'job_question' => 'Do You Want To Join Us?',
     'job_email' => 'Please Email Us',
-    'footer_text' => 'A company that provides business development services and professional, operational and digital solutions',
     'latest_tweets' => 'Latest Tweets',
     'suppliers_gate' => 'Suppliers Gate',
 

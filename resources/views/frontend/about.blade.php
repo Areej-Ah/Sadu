@@ -54,7 +54,7 @@
                 <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr
                             xs-padding-fifteen-tb xs-padding-eight-lr">
                     <div class="feature-box-icon">
-                        <i class="line-icon-Navigation-LeftWindow icon-medium text-dark-golden-yellow
+                        <i class="line-icon-Statistic icon-medium text-dark-golden-yellow
                                   margin-40px-bottom md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
@@ -71,7 +71,7 @@
                 <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr
                             xs-padding-fifteen-tb xs-padding-eight-lr">
                     <div class="feature-box-icon">
-                        <i class="line-icon-Cursor-Click2 icon-medium text-dark-golden-yellow
+                        <i class="line-icon-Speach-Bubble10 icon-medium text-dark-golden-yellow
                                   margin-40px-bottom md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
@@ -88,12 +88,12 @@
                 <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr xs-padding-fifteen-tb
                             xs-padding-eight-lr">
                     <div class="feature-box-icon">
-                        <i class="line-icon-Like-2 icon-medium text-dark-golden-yellow margin-40px-bottom
+                        <i class="line-icon-Castle icon-medium text-dark-golden-yellow margin-40px-bottom
                                   md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
 
-                        <span class="text-extra-medium alt-font text-dark-golden-yellow d-block margin-5px-bottom font-weight-500">{{ trans('admin.goals') }}</span>
+                        <span class="text-extra-medium alt-font text-dark-golden-yellow d-block margin-5px-bottom font-weight-500">{{ trans('admin.values') }}</span>
 
                         <p>{{ $setting->{'values_'.session('lang')} }}</p>
                     </div>

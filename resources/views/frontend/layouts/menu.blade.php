@@ -12,8 +12,8 @@
                          data-at2x="{{ Storage::url(setting()->logo2) }}"
                          class="alt-logo" alt="{{ $setting->sitename_ar }}"
                          title="{{ $setting->sitename_ar }}">
-                    <img src="{{ Storage::url(setting()->logo) }}"
-                         data-at2x="{{ Storage::url(setting()->logo) }}"
+                    <img src="{{ Storage::url(setting()->logo2) }}"
+                         data-at2x="{{ Storage::url(setting()->logo2) }}"
                          class="mobile-logo" alt="{{ $setting->sitename_ar }}"
                          title="{{ $setting->sitename_ar }}">
                 </a>
