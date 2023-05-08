@@ -185,6 +185,8 @@ return [
     'photos' => 'Photos',
     'videos' => 'Videos',
     'logo_admin' => 'Logo',
+    'slogan_en' => 'English Short Description',
+    'slogan_ar' => 'Arabic Short Description',
 
 
 

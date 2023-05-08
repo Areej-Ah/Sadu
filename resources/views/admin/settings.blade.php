@@ -23,6 +23,16 @@
         </div>
 
         <div class="form-group">
+          {!! Form::label('slogan_ar',trans('admin.slogan_ar')) !!}
+          {!! Form::text('slogan_ar',setting()->slogan_ar,['class'=>'form-control']) !!}
+        </div>
+
+        <div class="form-group">
+          {!! Form::label('slogan_en',trans('admin.slogan_en')) !!}
+          {!! Form::text('slogan_en',setting()->slogan_en,['class'=>'form-control']) !!}
+        </div>
+
+        <div class="form-group">
           {!! Form::label('email',trans('admin.email')) !!}
           {!! Form::email('email',setting()->email,['class'=>'form-control']) !!}
         </div>
