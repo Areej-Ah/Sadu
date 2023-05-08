@@ -37,6 +37,11 @@
           {!! Form::email('email',setting()->email,['class'=>'form-control']) !!}
         </div>
 
+        <div class="form-group">
+          {!! Form::label('employment_email',trans('admin.employment_email')) !!}
+          {!! Form::email('employment_email',setting()->employment_email,['class'=>'form-control']) !!}
+        </div>
+
         <br/>
         <br/>
 
