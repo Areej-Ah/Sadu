@@ -17,9 +17,12 @@ class PagesController extends Controller
     public function home()
     {
         $setting= Setting::first();
-        $services= Service::all();
-        $news= News::take(4)->get();
-        $customers= Customer::all();
+        //$services= Service::all();
+        $services= Db::table('services')->where('active', '=', '1')->get();
+        //$news= News::take(4)->get();
+        $news= Db::table('news')->where('active', '=', '1')->take(4)->get();
+        //$customers= Customer::all();
+        $customers = Db::table('customers')->where('show', '=', '1')->get();
         $socialMedia= SocialMedia::all();
 
         return view('frontend.home', compact('setting', 'services', 'customers', 'socialMedia','news'));
@@ -30,7 +33,8 @@ class PagesController extends Controller
     {
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
-        $services= Service::all();
+        //$services= Service::all();
+        $services= Db::table('services')->where('active', '=', '1')->get();
 
         return view('frontend.about', compact('setting', 'socialMedia', 'services'));
     }
@@ -40,7 +44,8 @@ class PagesController extends Controller
     {
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
-        $services= Service::all();
+        //$services= Service::all();
+        $services= Db::table('services')->where('active', '=', '1')->get();
 
         return view('frontend.services', compact('setting', 'socialMedia', 'services'));
     }
@@ -61,8 +66,10 @@ class PagesController extends Controller
     {
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
-        $news= News::all();
-        $services= Service::all();
+        //$news= News::all();
+        $news= Db::table('news')->where('active', '=', '1')->get();
+        //$services= Service::all();
+        $services= Db::table('services')->where('active', '=', '1')->get();
 
         return view('frontend.news', compact('setting', 'socialMedia', 'news', 'services'));
     }
@@ -71,8 +78,10 @@ class PagesController extends Controller
     {
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
-        $customers= Customer::all();
-        $services= Service::all();
+        //$customers= Customer::all();
+        $customers= Db::table('customers')->where('active', '=', '1')->get();
+        //$services= Service::all();
+        $services= Db::table('services')->where('active', '=', '1')->get();
 
         return view('frontend.clients', compact('setting', 'socialMedia', 'customers', 'services'));
     }
@@ -83,8 +92,9 @@ class PagesController extends Controller
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
         $new = News::find($id);
-        $services= Service::all();
-        
+        //$services= Service::all();
+        $services= Db::table('services')->where('active', '=', '1')->get();
+
         return view('frontend.new_item', compact('setting', 'socialMedia', 'new', 'services'));
     }
 
@@ -93,7 +103,8 @@ class PagesController extends Controller
     {
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
-        $services= Service::all();
+        //$services= Service::all();
+        $services= Db::table('services')->where('active', '=', '1')->get();
 
         return view('frontend.contact', compact('setting', 'socialMedia', 'services'));
     }
@@ -102,7 +113,8 @@ class PagesController extends Controller
     {
         $setting= Setting::first();
         $socialMedia= SocialMedia::all();
-        $services= Service::all();
+        //$services= Service::all();
+        $services= Db::table('services')->where('active', '=', '1')->get();
 
         return view('frontend.jobs', compact('setting', 'socialMedia', 'services'));
     }

@@ -148,9 +148,9 @@ return [
     'contact_us' => 'تواصل معنا',
     'media_center' => 'المركز الاعلامي',
     'employment' => 'التوظيف',
-    'img_vid' => 'صور وفيديو',
+    'img_vid' => 'معرض الأعمال',
     'annual_report' => 'التقرير السنوي',
-    'company_profile' => 'بروفايل الشركة',
+    'company_profile' => 'ملف سدو',
     'beneficiaries' => 'جهة مستفيدة',
     'projects' => 'مشروعاً',
     'employee' => 'موظف',
@@ -172,7 +172,7 @@ return [
     'rights' => 'جميع الحقوق محفوظة 2023',
     'profile' => 'الملف التعريفي',
     'about_company' => 'عن الشركة',
-    'company_solutions' => 'حلول الشركة',
+    'company_solutions' => 'مجالات عملنا',
     'know_us' => 'تعرّف علينا',
     'identity' => 'الهوية',
     'contact_inquiries' => 'للتواصل والاستفسارات',
@@ -184,6 +184,9 @@ return [
     'job_email' => 'الرجاء مراسلتنا عبر البريد الالكتروني',
     'latest_tweets' => 'أحدث التغريدات',
     'suppliers_gate' => 'بوابة الموردين',
+    'photos' => 'الصور',
+    'videos' => 'الفيديوهات',
+    'logo_admin' => 'اللوغو',
 
 
 

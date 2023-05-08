@@ -40,15 +40,15 @@
                             <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.identity') }}</a></li>
+                                {{--<li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.identity') }}</a></li> --}}
                                 <li class="dropdown"><a href="{{ url ('/news') }}">{{ trans('admin.news') }}</a></li>
                                 <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.img_vid') }}</a></li>
-                                <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.annual_report') }}</a></li>
+                               {{-- <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.annual_report') }}</a></li> --}}
                                 <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.company_profile') }}</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"> <a href="{{ url ('/clients') }}" class="nav-link">{{ trans('admin.clients') }}</a></li>
-                        <li class="nav-item"> <a href="#suppliers" class="nav-link">{{ trans('admin.suppliers_gate') }}</a></li>
+                       {{-- <li class="nav-item"> <a href="#suppliers" class="nav-link">{{ trans('admin.suppliers_gate') }}</a></li> --}}
                         <li class="nav-item"> <a href="{{ url ('/jobs') }}" class="nav-link">{{ trans('admin.employment') }}</a></li>
                         <li class="nav-item"> <a href="{{ url ('/contact') }}" class="nav-link">{{ trans('admin.contact_us') }}</a></li>
                     </ul>

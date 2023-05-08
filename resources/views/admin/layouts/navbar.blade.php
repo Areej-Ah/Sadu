@@ -257,6 +257,62 @@
         </ul>
       </li>
 
+
+      <li class="nav-item has-treeview {{ active_menu('photos')[0] }} ">
+        <a href="#" class="nav-link ">
+          <i class="nav-icon fa fa-briefcase"></i>
+          <p>
+            {{ trans('admin.photos') }}
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview" style=" {{ active_menu('photos')[1] }} ">
+
+          <li class="nav-item">
+            <a href="{{aurl('photos')}}" class="nav-link">
+              <i class="fa fa-briefcase nav-icon"></i>
+              <p>{{ trans('admin.photos') }}</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{aurl('photos/create')}}" class="nav-link">
+              <i class="fa fa-plus nav-icon"></i>
+              <p>{{ trans('admin.add') }}</p>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+
+      <li class="nav-item has-treeview {{ active_menu('videos')[0] }} ">
+        <a href="#" class="nav-link ">
+          <i class="nav-icon fa fa-briefcase"></i>
+          <p>
+            {{ trans('admin.videos') }}
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview" style=" {{ active_menu('videos')[1] }} ">
+
+          <li class="nav-item">
+            <a href="{{aurl('videos')}}" class="nav-link">
+              <i class="fa fa-briefcase nav-icon"></i>
+              <p>{{ trans('admin.videos') }}</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{aurl('videos/create')}}" class="nav-link">
+              <i class="fa fa-plus nav-icon"></i>
+              <p>{{ trans('admin.add') }}</p>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
       <li class="nav-item has-treeview {{ active_menu('customers')[0] }} ">
         <a href="#" class="nav-link ">
           <i class="nav-icon fa fa-handshake"></i>

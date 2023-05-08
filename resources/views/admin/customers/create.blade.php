@@ -30,10 +30,10 @@
 
 
         <div class="form-group">
-          <label for="exampleInputFile">{{ trans('admin.logo') }}</label>
+          <label for="exampleInputFile">{{ trans('admin.logo_admin') }}</label>
           <div class="input-group">
             <div class="custom-file">
-              {!! Form::label('logo',trans('admin.logo'),['class'=>'custom-file-label']) !!}
+              {!! Form::label('logo',trans('admin.logo_admin'),['class'=>'custom-file-label']) !!}
               {!! Form::file('logo',['class'=>'custom-file-input']) !!}
 
             </div>
