@@ -44,7 +44,7 @@
                                 <li class="dropdown"><a href="{{ url ('/news') }}">{{ trans('admin.news') }}</a></li>
                                 <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.img_vid') }}</a></li>
                                {{-- <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.annual_report') }}</a></li> --}}
-                                <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.company_profile') }}</a></li>
+                                <li class="dropdown"><a target="_blank" href="{{ url('frontend/sadu') }}/profile.pdf">{{ trans('admin.company_profile') }}</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"> <a href="{{ url ('/clients') }}" class="nav-link">{{ trans('admin.clients') }}</a></li>

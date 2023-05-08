@@ -27,12 +27,12 @@
     <div class="footer-top padding-seven-tb lg-padding-eight-tb sm-padding-50px-tb">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-xl-6 col-sm-6 order-sm-1 order-xl-0 lg-margin-50px-bottom xs-margin-25px-bottom">
+                <div class="col-12 col-xl-3 col-sm-6 order-sm-1 order-xl-0 lg-margin-50px-bottom xs-margin-25px-bottom">
                     <a href="index.html" class="footer-logo margin-20px-bottom d-block"><img style="width: auto; height: 50px;" src="{{ Storage::url(setting()->logo) }}" data-at2x="{{ Storage::url(setting()->logo) }}" alt="" class="max-h-inherit"></a>
-                    <p class="alt-font font-weight-300 text-large line-height-36px text-white d-inline-block w-85">{{ $setting->{'description_'.session('lang')} }}</p>
+                    <p class="alt-font font-weight-300 text-large line-height-36px text-white d-inline-block w-85">{{ $setting->{'slogan_'.session('lang')} }}</p>
                     <p class="text-white">&copy; {{ trans('admin.rights') }} </p>
                 </div>
-                <div class="col-12 col-xl-2  col-sm-6 order-sm-3 order-xl-0 xs-margin-25px-bottom">
+                <div class="col-12 col-xl-3  col-sm-6 order-sm-3 order-xl-0 xs-margin-25px-bottom">
                     <span class="alt-font font-weight-600 d-block text-white margin-20px-bottom xs-margin-10px-bottom">{{ trans('admin.about_company') }}</span>
                     <ul>
                         <li><a href="{{ url ('/about') }}" class="text-white-hover">{{ trans('admin.about') }}</a></li>
@@ -41,7 +41,7 @@
                         <li><a href="{{ url ('/contact') }}" class="text-white-hover">{{ trans('admin.contact_us') }}</a></li>
                     </ul>
                 </div>
-                <div class="col-12 col-xl-2  col-sm-6 order-sm-4 order-xl-0 xs-margin-25px-bottom">
+                <div class="col-12 col-xl-3  col-sm-6 order-sm-4 order-xl-0 xs-margin-25px-bottom">
                     <span class="alt-font font-weight-600 d-block text-white margin-20px-bottom xs-margin-10px-bottom">{{ trans('admin.company_solutions') }}</span>
                     <ul>
                         @foreach($services as $service)
@@ -50,7 +50,7 @@
                        
                     </ul>
                 </div>
-                <div class="col-12 col-xl-2 col-sm-6 order-sm-2 order-xl-0 lg-margin-50px-bottom xs-no-margin-bottom">
+                <div class="col-12 col-xl-3 col-sm-6 order-sm-2 order-xl-0 lg-margin-50px-bottom xs-no-margin-bottom">
                     <span class="alt-font font-weight-600 d-block text-white margin-30px-bottom xs-margin-25px-bottom">{{ trans('admin.follow_us') }}</span>
 
                     <div class="social-icon-style-12">

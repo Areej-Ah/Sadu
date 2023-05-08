@@ -260,7 +260,7 @@
 
       <li class="nav-item has-treeview {{ active_menu('photos')[0] }} ">
         <a href="#" class="nav-link ">
-          <i class="nav-icon fa fa-briefcase"></i>
+          <i class="nav-icon fa fa-file-image"></i>
           <p>
             {{ trans('admin.photos') }}
             <i class="right fas fa-angle-left"></i>
@@ -270,7 +270,7 @@
 
           <li class="nav-item">
             <a href="{{aurl('photos')}}" class="nav-link">
-              <i class="fa fa-briefcase nav-icon"></i>
+              <i class="fa fa-file-image nav-icon"></i>
               <p>{{ trans('admin.photos') }}</p>
             </a>
           </li>
@@ -288,7 +288,7 @@
 
       <li class="nav-item has-treeview {{ active_menu('videos')[0] }} ">
         <a href="#" class="nav-link ">
-          <i class="nav-icon fa fa-briefcase"></i>
+          <i class="nav-icon fa fa-file-video"></i>
           <p>
             {{ trans('admin.videos') }}
             <i class="right fas fa-angle-left"></i>
@@ -298,7 +298,7 @@
 
           <li class="nav-item">
             <a href="{{aurl('videos')}}" class="nav-link">
-              <i class="fa fa-briefcase nav-icon"></i>
+              <i class="fa fa-file-video nav-icon"></i>
               <p>{{ trans('admin.videos') }}</p>
             </a>
           </li>
