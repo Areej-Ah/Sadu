@@ -24,12 +24,12 @@
 
         <div class="form-group">
           {!! Form::label('text_ar', trans('admin.text_ar')) !!}
-          {!! Form::textarea('text_ar',old('text_ar'),['class'=>'form-control']) !!}
+          {!! Form::textarea('text_ar',old('text_ar'),['class'=>'form-control summernote_text_ar']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('text_en', trans('admin.text_en')) !!}
-          {!! Form::textarea('text_en',old('text_en'),['class'=>'form-control']) !!}
+          {!! Form::textarea('text_en',old('text_en'),['class'=>'form-control summernote_text_en']) !!}
         </div>
 
         <div class="form-group">
@@ -60,9 +60,20 @@
     <!-- /.card-body -->
   </div>
 
+@endsection
 
 
-
-
-
+@section('scripts')
+    <script>
+      $('.summernote_text_ar').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+  <script>
+      $('.summernote_text_en').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
 @endsection

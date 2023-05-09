@@ -27,9 +27,9 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s"><img src="{{ Storage::url($new->image) }}" alt="" /></div>
                     <div class="col-12 col-lg-5 offset-lg-1 col-md-6 last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.4s">
-                        <span class="text-orange-zest alt-font font-weight-500 margin-25px-bottom d-block xs-margin-15px-bottom">{{ $new->created_at->format('d/m/Y')}}</span>
-                        <h6 class="alt-font text-green margin-35px-bottom font-weight-500 xs-margin-25px-bottom">{{ $new->{'title_'.session('lang')} }}</h6>
-                        <p class="text-large">{{ $new->{'text_'.session('lang')} }}</p>
+                        <span class="text-orange-zest alt-font font-weight-500 margin-25px-bottom d-block xs-margin-15px-bottom">{!! $new->created_at->format('d/m/Y') !!}</span>
+                        <h6 class="alt-font text-green margin-35px-bottom font-weight-500 xs-margin-25px-bottom">{!! $new->{'title_'.session('lang')} !!}</h6>
+                        <p class="text-large">{!! $new->{'text_'.session('lang')} !!}</p>
                     </div>
                 </div>
             </div>

@@ -24,12 +24,12 @@
 
         <div class="form-group">
             {!! Form::label('description_ar', trans('admin.description_ar')) !!}
-            {!! Form::text('description_ar',old('description_ar'),['class'=>'form-control']) !!}
+            {!! Form::textarea('description_ar',old('description_ar'),['class'=>'form-control summernote_description_ar']) !!}
         </div>
 
         <div class="form-group">
             {!! Form::label('description_en', trans('admin.description_en')) !!}
-            {!! Form::text('description_en',old('description_en'),['class'=>'form-control']) !!}
+            {!! Form::textarea('description_en',old('description_en'),['class'=>'form-control summernote_description_en']) !!}
         </div>
 
         <div class="form-group">
@@ -65,4 +65,19 @@
 
 
 
+@endsection
+
+@section('scripts')
+    <script>
+      $('.summernote_description_ar').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+  <script>
+      $('.summernote_description_en').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
 @endsection

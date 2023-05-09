@@ -2,7 +2,7 @@
     <strong>Copyright &copy; 2023 </strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-     
+
     </div>
   </footer>
 
@@ -83,5 +83,8 @@
 
 @stack('js')
 @stack('css')
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+  @yield('scripts')
+
 </body>
 </html>
