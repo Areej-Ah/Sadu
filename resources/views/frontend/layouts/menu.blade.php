@@ -31,26 +31,26 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                      <ul class="navbar-nav alt-font">
-                        <li class="nav-item"> <a href="{{ url ('/') }}" class="nav-link">{{ trans('admin.home') }}</a></li>
-                        <li class="nav-item"> <a href="{{ url ('/about') }}" class="nav-link">{{ trans('admin.about') }}</a></li>
-                        <li class="nav-item"> <a href="{{ url ('/services') }}" class="nav-link">{{ trans('admin.our_areas_of_works') }}</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/') }}" class="nav-link">{!! trans('admin.home') !!}</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/about') }}" class="nav-link">{!! trans('admin.about') !!}</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/services') }}" class="nav-link">{!! trans('admin.our_areas_of_works') !!}</a></li>
                         <li class="nav-item dropdown simple-dropdown">
 
-                            <a href="#services" class="nav-link">{{ trans('admin.media_center') }}</a>
+                            <a href="#services" class="nav-link">{!! trans('admin.media_center') !!}</a>
                             <i class="fa fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
 
                             <ul class="dropdown-menu" role="menu">
                                 {{--<li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.identity') }}</a></li> --}}
-                                <li class="dropdown"><a href="{{ url ('/news') }}">{{ trans('admin.news') }}</a></li>
+                                <li class="dropdown"><a href="{{ url ('/news') }}">{!! trans('admin.news') !!}</a></li>
                                 <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.img_vid') }}</a></li>
                                {{-- <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.annual_report') }}</a></li> --}}
-                                <li class="dropdown"><a target="_blank" href="{{ url('frontend/sadu') }}/profile.pdf">{{ trans('admin.company_profile') }}</a></li>
+                                <li class="dropdown"><a target="_blank" href="{{ url('frontend/sadu') }}/profile.pdf">{!! trans('admin.company_profile') !!}</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="{{ url ('/clients') }}" class="nav-link">{{ trans('admin.clients') }}</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/clients') }}" class="nav-link">{!! trans('admin.clients') !!}</a></li>
                        {{-- <li class="nav-item"> <a href="#suppliers" class="nav-link">{{ trans('admin.suppliers_gate') }}</a></li> --}}
-                        <li class="nav-item"> <a href="{{ url ('/jobs') }}" class="nav-link">{{ trans('admin.employment') }}</a></li>
-                        <li class="nav-item"> <a href="{{ url ('/contact') }}" class="nav-link">{{ trans('admin.contact_us') }}</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/jobs') }}" class="nav-link">{!! trans('admin.employment') !!}</a></li>
+                        <li class="nav-item"> <a href="{{ url ('/contact') }}" class="nav-link">{!! trans('admin.contact_us') !!}</a></li>
                     </ul>
                 </div>
             </div>

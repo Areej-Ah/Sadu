@@ -133,12 +133,12 @@
 
         <div class="form-group">
           {!! Form::label('description_en',trans('admin.description_en')) !!}
-          {!! Form::textarea('description_en',setting()->description_en,['class'=>'form-control']) !!}
+          {!! Form::textarea('description_en',setting()->description_en,['class'=>'form-control summernote_description_en']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('description_ar',trans('admin.description_ar')) !!}
-          {!! Form::textarea('description_ar',setting()->description_ar,['class'=>'form-control']) !!}
+          {!! Form::textarea('description_ar',setting()->description_ar,['class'=>'form-control summernote_description_ar']) !!}
         </div>
 
         <div class="form-group">
@@ -171,42 +171,42 @@
 
         <div class="form-group">
           {!! Form::label('message_ar',trans('admin.message_ar')) !!}
-          {!! Form::textarea('message_ar',setting()->message_ar,['class'=>'form-control']) !!}
+          {!! Form::textarea('message_ar',setting()->message_ar,['class'=>'form-control summernote_message_ar']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('message_en',trans('admin.message_en')) !!}
-          {!! Form::textarea('message_en',setting()->message_en,['class'=>'form-control']) !!}
+          {!! Form::textarea('message_en',setting()->message_en,['class'=>'form-control summernote_message_en']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('vision_ar',trans('admin.vision_ar')) !!}
-          {!! Form::textarea('vision_ar',setting()->vision_ar,['class'=>'form-control']) !!}
+          {!! Form::textarea('vision_ar',setting()->vision_ar,['class'=>'form-control summernote_vision_ar']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('vision_en',trans('admin.vision_en')) !!}
-          {!! Form::textarea('vision_en',setting()->vision_en,['class'=>'form-control']) !!}
+          {!! Form::textarea('vision_en',setting()->vision_en,['class'=>'form-control summernote_vision_en']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('values_ar',trans('admin.values_ar')) !!}
-          {!! Form::textarea('values_ar',setting()->values_ar,['class'=>'form-control']) !!}
+          {!! Form::textarea('values_ar',setting()->values_ar,['class'=>'form-control summernote_values_ar']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('values_en',trans('admin.values_en')) !!}
-          {!! Form::textarea('values_en',setting()->values_en,['class'=>'form-control']) !!}
+          {!! Form::textarea('values_en',setting()->values_en,['class'=>'form-control summernote_values_en']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('team_experinces_ar',trans('admin.team_experinces_ar')) !!}
-          {!! Form::textarea('team_experinces_ar',setting()->team_experinces_ar,['class'=>'form-control']) !!}
+          {!! Form::textarea('team_experinces_ar',setting()->team_experinces_ar,['class'=>'form-control summernote_team_experinces_ar']) !!}
         </div>
 
         <div class="form-group">
           {!! Form::label('team_experinces_en',trans('admin.team_experinces_en')) !!}
-          {!! Form::textarea('team_experinces_en',setting()->team_experinces_en,['class'=>'form-control']) !!}
+          {!! Form::textarea('team_experinces_en',setting()->team_experinces_en,['class'=>'form-control summernote_team_experinces_en']) !!}
         </div>
 
         <div class="form-group">
@@ -257,4 +257,68 @@
 
 
 
+@endsection
+
+@section('scripts')
+
+    <script>
+      $('.summernote_description_ar').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+  <script>
+      $('.summernote_description_en').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+        <script>
+      $('.summernote_message_ar').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+  <script>
+      $('.summernote_message_en').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+        <script>
+      $('.summernote_vision_ar').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+  <script>
+      $('.summernote_vision_en').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+        <script>
+      $('.summernote_values_ar').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+  <script>
+      $('.summernote_values_en').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+        <script>
+      $('.summernote_team_experinces_en').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+  <script>
+      $('.summernote_team_experinces_ar').summernote({
+        tabsize: 2,
+        height: 100
+      });
+    </script>
 @endsection

@@ -7,10 +7,10 @@
     <div class="container h-100">
         <div class="row align-items-end justify-content-center h-100">
             <div class="col-12 col-xl-6 col-lg-7 col-md-10 position-relative page-title-large text-center">
-                <span class="margin-15px-bottom alt-font  text-extra-large text-white d-block">{{ trans('admin.intro') }}</span>
+                <span class="margin-15px-bottom alt-font  text-extra-large text-white d-block">{!! trans('admin.intro') !!}</span>
                 <h1 class="text-white alt-font font-weight-500
                            margin-5-rem-bottom sm-margin-3-rem-bottom">
-                           {{ $service->{'name_'.session('lang')} }}
+                           {!! $service->{'name_'.session('lang')} !!}
                 </h1>
                 <span class="w-1px h-80px d-inline-block
                             bg-white margin-5-rem-bottom sm-margin-3-rem-bottom sm-h-50px"></span>
@@ -28,9 +28,9 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-12 col-lg-5 col-md-9 md-margin-7-rem-bottom">
                 <h6 class="alt-font font-weight-600
-                           text-extra-dark-gray w-95">{{ $service->{'name_'.session('lang')} }}</h6>
+                           text-extra-dark-gray w-95">{!! $service->{'name_'.session('lang')} !!}</h6>
                 <p class="w-80 lg-w-95">
-                    {{ $service->description_ar}}
+                    {!! $service->description_ar !!}
                 </p>
             </div>
             <div class="col-12 col-lg-7 col-md-9 padding-55px-lr sm-padding-5px-right md-padding-50px-left">

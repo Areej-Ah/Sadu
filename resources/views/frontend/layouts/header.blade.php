@@ -2,9 +2,9 @@
 <html class="no-js" lang="en">
 <head>
     @if(lang() == "ar")
-    <title>{{ setting()->sitename_ar }}</title>
+    <title>{!! setting()->sitename_ar !!}</title>
     @else
-    <title>{{ setting()->sitename_en }}</title>
+    <title>{!! setting()->sitename_en !!}</title>
     @endif
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,4 +29,3 @@
     @endif
 </head>
 <body data-mobile-nav-style="classic">
-  
