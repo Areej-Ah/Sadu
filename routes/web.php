@@ -14,6 +14,8 @@ Route::group(['middleware' => 'Maintenance'], function () {
     Route::get('/clients', 'PagesController@clients');
     Route::get('/contact', 'PagesController@contact');
     Route::get('/jobs', 'PagesController@jobs');
+    Route::get('/images', 'PagesController@images');
+    Route::get('/videos', 'PagesController@videos');
 
 });
 

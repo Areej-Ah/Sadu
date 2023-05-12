@@ -32,7 +32,7 @@
 
         <div class="form-group">
         {!! Form::label('activation', trans('admin.activation')) !!}
-        {!! Form::select('active', ['1' => trans('admin.active'), '0' => trans('admin.inactive')],$socialMedia->active,['class'=>'form-control']) !!}
+        {!! Form::select('active', ['1' => trans('admin.active'), '0' => trans('admin.inactive')],$video->active,['class'=>'form-control']) !!}
        </div>
 
 

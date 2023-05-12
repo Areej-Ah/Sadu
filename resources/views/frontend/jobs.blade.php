@@ -32,9 +32,9 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-center">
-                <a href="mailto:{{ $setting->email }}"
+                <a href="mailto:{{ $setting->employment_email }}"
                    class="btn btn-large btn-round-edge btn-transparent-green btn-slide-right-bg">
-                   {!! $setting->email !!} <span class="bg-yellowish-green"></span>
+                   {!! $setting->employment_email !!} <span class="bg-yellowish-green"></span>
                 </a>
             </div>
         </div>

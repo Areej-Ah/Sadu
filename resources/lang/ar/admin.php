@@ -148,7 +148,8 @@ return [
     'contact_us'                => 'تواصل معنا',
     'media_center'              => 'المركز الاعلامي',
     'employment'                => 'التوظيف',
-    'img_vid'                   => 'معرض الأعمال',
+    'image_gallery'             => 'معرض الصور',
+    'video_gallery'             => 'معرض الفيديو',
     'annual_report'             => 'التقرير السنوي',
     'company_profile'           => 'ملف سدو',
     'beneficiaries'             => 'جهة مستفيدة',
@@ -189,7 +190,7 @@ return [
     'logo_admin'                => 'اللوغو',
     'slogan_ar'                 => 'الوصف المختصر بالعربي',
     'slogan_en'                 => 'الوصف المختصر بالانجليزي',
-    'employment_email'          => 'للتوظيف',
+    'employment_email'          => 'بريد التوظيف',
 
 
 

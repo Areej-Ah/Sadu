@@ -36,7 +36,7 @@
                     <span class="alt-font font-weight-600 d-block text-white margin-20px-bottom xs-margin-10px-bottom">{!! trans('admin.about_company') !!}</span>
                     <ul>
                         <li><a href="{{ url ('/about') }}" class="text-white-hover">{!! trans('admin.about') !!}</a></li>
-                        <li><a href="{{ url ('/') }}" class="text-white-hover">{!! trans('admin.profile') !!}</a></li>
+                        <li><a target="_blank" href="{{ url('frontend/sadu') }}/profile.pdf" class="text-white-hover">{!! trans('admin.profile') !!}</a></li>
                         <li><a href="{{ url ('/about') }}" class="text-white-hover">{!! trans('admin.areas_of_works') !!}</a></li>
                         <li><a href="{{ url ('/contact') }}" class="text-white-hover">{!! trans('admin.contact_us') !!}</a></li>
                     </ul>

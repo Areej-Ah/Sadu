@@ -10,7 +10,8 @@ use App\Model\Customer;
 use App\Model\Setting;
 use App\Model\SocialMedia;
 use App\Model\News;
-use DB;
+use App\Model\Photo;
+use App\Model\Video;
 
 class PagesController extends Controller
 {
@@ -105,6 +106,26 @@ class PagesController extends Controller
         $services= Service::where('active', '1')->get();
 
         return view('frontend.jobs', compact('setting', 'socialMedia', 'services'));
+    }
+
+    public function images()
+    {
+        $setting= Setting::first();
+        $socialMedia= SocialMedia::where('active', '1')->get();
+        $images= Photo::where('active', '1')->get();
+        $services= Service::where('active', '1')->get();
+
+        return view('frontend.images', compact('setting', 'socialMedia', 'images', 'services'));
+    }
+
+    public function videos()
+    {
+        $setting= Setting::first();
+        $socialMedia= SocialMedia::where('active', '1')->get();
+        $videos= Video::where('active', '1')->get();
+        $services= Service::where('active', '1')->get();
+
+        return view('frontend.videos', compact('setting', 'socialMedia', 'videos', 'services'));
     }
 
 }

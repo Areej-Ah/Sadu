@@ -42,7 +42,8 @@
                             <ul class="dropdown-menu" role="menu">
                                 {{--<li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.identity') }}</a></li> --}}
                                 <li class="dropdown"><a href="{{ url ('/news') }}">{!! trans('admin.news') !!}</a></li>
-                                <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.img_vid') }}</a></li>
+                                <li class="dropdown"><a href="{{ url ('/images') }}">{{ trans('admin.image_gallery') }}</a></li>
+                                <li class="dropdown"><a href="{{ url ('/videos') }}">{{ trans('admin.video_gallery') }}</a></li>
                                {{-- <li class="dropdown"><a href="javascript:void(0);">{{ trans('admin.annual_report') }}</a></li> --}}
                                 <li class="dropdown"><a target="_blank" href="{{ url('frontend/sadu') }}/profile.pdf">{!! trans('admin.company_profile') !!}</a></li>
                             </ul>
