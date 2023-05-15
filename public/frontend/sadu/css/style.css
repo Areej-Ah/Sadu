@@ -466,7 +466,7 @@ h6 { font-size:1.80rem; line-height:2.7rem; }
 .bg-gradient-magenta-orange { background-image: linear-gradient(to right top, #e42464, #ed3c5f, #f44f5c, #fa6259, #ff7357); }
 .bg-gradient-magenta-orange-2 { background-image: linear-gradient(to right top, #ec606c, #ee6362, #ee6757, #ed6c4d, #eb7242); }
 .bg-gradient-purple-magenta { background-image: linear-gradient(to right top, #502970, #7f2977, #ac2775, #d42d6b, #f34259); }
-.bg-gradient-light-purple-light-orange { background-image: linear-gradient(to right top, #b783ff, #e37be0, #fa7cc1, #ff85a6, #ff9393); }
+.bg-gradient-light-purple-light-orange { background-image: linear-gradient(to right top, #3c2c5b, #3c2c5b, #3c2c5b, #3c2c5b, #3c2c5b); }
 .bg-gradient-sky-blue-pink { background-image: linear-gradient(to right top, #556fff, #b263e4, #e05fc4, #f767a6, #ff798e); }
 .bg-gradient-peacock-blue-crome-yellow { background-image: linear-gradient(to right top, #36c1e1, #28ccc0, #74cf8e, #bac962, #feb95b); }
 .bg-gradient-fast-blue-purple { background-image: linear-gradient(to right top, #5bb4a2, #5bb4a2, #5bb4a2, #5bb4a2, #5bb4a2); }

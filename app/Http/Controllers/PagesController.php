@@ -72,7 +72,7 @@ class PagesController extends Controller
     {
         $setting= Setting::first();
         $socialMedia= SocialMedia::where('active', '1')->get();
-        $customers= Customer::where('active', '1')->get();
+        $customers= Customer::where('show', '1')->get();
         $services= Service::where('active', '1')->get();
 
         return view('frontend.clients', compact('setting', 'socialMedia', 'customers', 'services'));

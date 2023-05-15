@@ -54,7 +54,7 @@
                 <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr
                             xs-padding-fifteen-tb xs-padding-eight-lr">
                     <div class="feature-box-icon">
-                        <i class="line-icon-Statistic icon-medium text-dark-golden-yellow
+                        <i class="line-icon-Telescope icon-medium text-dark-golden-yellow
                                   margin-40px-bottom md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
@@ -71,7 +71,7 @@
                 <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr
                             xs-padding-fifteen-tb xs-padding-eight-lr">
                     <div class="feature-box-icon">
-                        <i class="line-icon-Speach-Bubble10 icon-medium text-dark-golden-yellow
+                        <i class="line-icon-Pencil icon-medium text-dark-golden-yellow
                                   margin-40px-bottom md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
@@ -88,7 +88,7 @@
                 <div class="feature-box feature-box-shadow padding-twenty-tb padding-twelve-lr xs-padding-fifteen-tb
                             xs-padding-eight-lr">
                     <div class="feature-box-icon">
-                        <i class="line-icon-Castle icon-medium text-dark-golden-yellow margin-40px-bottom
+                        <i class="line-icon-Diamond icon-medium text-dark-golden-yellow margin-40px-bottom
                                   md-margin-20px-bottom"></i>
                     </div>
                     <div class="feature-box-content last-paragraph-no-margin" style="text-align: center;">
@@ -108,49 +108,51 @@
 
 
 <section class="half-section parallax" data-parallax-background-ratio="0.1"
-        style="background-image: url({{ url ('frontend/sadu/images/statistics.jpg') }});">
+        style="background-image: url({{ url ('frontend/sadu/images/s2.jpg') }});">
+        <div class="opacity-full bg-gradient-light-purple-light-orange"></div>
     <div class="container">
         <div class="row align-items-center justify-content-center">
-            <div class="row">
+            <div class="row position-relative">
 
-            <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom
-                        xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.1s" style="direction: ltr;">
-                <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center ">
-                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600
-                               mb-0 " data-to="{{ $setting->number_of_beneficiaries }}"></h2>
-                               <span class="text-dark-golden-yellow title-extra-small
-                                     font-weight-500 margin-5px-left">+</span>
+                <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom
+                            xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.1s" style="direction: ltr;">
+                    <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center ">
+                        <h2 class="vertical-counter d-inline-flex text-white alt-font appear font-weight-600
+                                mb-0 " data-to="{{ $setting->number_of_beneficiaries }}"></h2>
+                                <span class="text-dark-golden-yellow title-extra-small
+                                        font-weight-500 margin-5px-left">+</span>
+                    </div>
+
+                    <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{!! trans('admin.beneficiaries') !!}</span>
+
                 </div>
 
-                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{!! trans('admin.beneficiaries') !!}</span>
-
-            </div>
-
-            <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom
-                        xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="direction: ltr;">
-                <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center">
-                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear
-                               font-weight-600  mb-0 " data-to="{{ $setting->number_of_employees}}"></h2>
-                               <span class="text-dark-golden-yellow title-extra-small
-                                            font-weight-500 margin-5px-left">+</span>
+                <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start sm-margin-30px-bottom
+                            xs-margin-40px-bottom wow animate__fadeIn" data-wow-delay="0.2s" style="direction: ltr;">
+                    <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center">
+                        <h2 class="vertical-counter d-inline-flex text-white alt-font appear
+                                font-weight-600  mb-0 " data-to="{{ $setting->number_of_employees}}"></h2>
+                                <span class="text-dark-golden-yellow title-extra-small
+                                                font-weight-500 margin-5px-left">+</span>
+                    </div>
+                    <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{!! trans('admin.employee') !!}</span>
                 </div>
-                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{!! trans('admin.employee') !!}</span>
-            </div>
 
-            <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start xs-margin-40px-bottom
-                        wow animate__fadeIn" data-wow-delay="0.3s" style="direction: ltr;">
-                <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center ">
-                    <h2 class="vertical-counter d-inline-flex text-white alt-font appear
-                               font-weight-600  mb-0 " data-to="{{$setting->number_of_projects}}"></h2>
-                               <span class="text-dark-golden-yellow title-extra-small
-                                            font-weight-500 margin-5px-left">+</span>
+                <div class="col-12 col-lg-4  col-md-4 col-sm-6 text-center text-md-start xs-margin-40px-bottom
+                            wow animate__fadeIn" data-wow-delay="0.3s" style="direction: ltr;">
+                    <div class="d-flex flex-row align-item-start margin-10px-bottom justify-content-center ">
+                        <h2 class="vertical-counter d-inline-flex text-white alt-font appear
+                                font-weight-600  mb-0 " data-to="{{$setting->number_of_projects}}"></h2>
+                                <span class="text-dark-golden-yellow title-extra-small
+                                                font-weight-500 margin-5px-left">+</span>
+                    </div>
+                    <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{!! trans('admin.projects') !!}</span>
                 </div>
-                <span class="alt-font text-extra-large  d-block text-white" style="text-align: center;">{!! trans('admin.projects') !!}</span>
-            </div>
 
-        </div>
+            </div>
         </div>
     </div>
 </section>
+
 
 @endsection
